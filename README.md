@@ -1,4 +1,4 @@
-# Machine_Learning
+# Machine Learning
 Contains assignments from ECE521 course at the University of Toronto
 
 Assignment 1 - KNN Algorithm
