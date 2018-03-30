@@ -5,4 +5,4 @@ Assignment 1 - KNN Algorithm
 
 Assignment 2 - Linear and Logistic Regression, Soft-Max
 
-Assignment 3 - TBD
+Assignment 3 - Neural Networks
