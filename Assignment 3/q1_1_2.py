@@ -142,7 +142,7 @@ for count, rate in enumerate(learning_rate):
                                                                 feed_dict={X: testData, Y: testTarget})
 
         if train_step % 1000 == 0:
-            print("---------- {} STEPS FINISHED - Results ----------".format(train_step)
+            print("---------- {} STEPS FINISHED - Results ----------".format(train_step))
             print("Train loss:", train_loss[cur_epoch], "Valid loss:", valid_loss[cur_epoch], "Test loss:", test_loss[cur_epoch])
             print("Train error:", train_err[cur_epoch], "Valid error:", valid_err[cur_epoch], "Test error:", test_err[cur_epoch])
             print("---------- END ----------")
