@@ -25,6 +25,9 @@ with np.load("notMNIST.npz") as data:
 trainData = np.reshape(trainData, (trainData.shape[0], -1))
 validData = np.reshape(validData, (validData.shape[0], -1))
 testData = np.reshape(testData, (testData.shape[0], -1))
+trainTarget = np.reshape(trainTarget, (-1, 1))
+validTarget = np.reshape(validTarget, (-1, 1))
+testTarget = np.reshape(testTarget, (-1, 1))
 num_categories = 10
 
 # print "-------- New shapes ----------"
@@ -72,7 +75,7 @@ learning_rate = [0.005, 0.001, 0.0001]
 
 # Set up place holders for the tf graph
 X = tf.placeholder(tf.float64, shape=[None, trainData.shape[1]], name="Data")
-Y = tf.placeholder(tf.float64, shape=[None, num_categories], name="Label")
+Y = tf.placeholder(tf.float64, shape=[None, 1], name="Label")
 
 # Build the network using ReLU activation; 3 layers => two W matrices
 with tf.variable_scope("hidden_layer"):
