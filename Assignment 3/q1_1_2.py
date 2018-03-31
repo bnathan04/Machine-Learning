@@ -116,9 +116,9 @@ best_rate = 0
 for count, rate in enumerate(learning_rate):
 
     # Start session, (re)init variables and optimizer
+    optimizer = tf.train.AdamOptimizer(learning_rate=rate).minimize(ce_loss)
     sess = tf.Session()
     sess.run(tf.global_variables_initializer())
-    optimizer = tf.train.AdamOptimizer(learning_rate=rate).minimize(ce_loss)
 
     for train_step in range(num_train_steps):
         
