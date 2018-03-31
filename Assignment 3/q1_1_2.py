@@ -75,10 +75,13 @@ X = tf.placeholder(tf.float64, shape=[None, trainData.shape[1]], name="Data")
 Y = tf.placeholder(tf.float64, shape=[None, num_categories], name="Label")
 
 # Build the network using ReLU activation; 3 layers => two W matrices
-W1 = build_layer(X, num_hidden_units)
-hidden_layer = tf.nn.relu(W1)
-W2 = build_layer(hidden_layer, num_categories)
-softmax_layer = tf.nn.relu(W2)
+with tf.variable_scope("hidden_layer"):
+    W1 = build_layer(X, num_hidden_units)
+    hidden_layer = tf.nn.relu(W1)
+
+with tf.variable_scope("softmax_layer"):    
+    W2 = build_layer(hidden_layer, num_categories)
+    softmax_layer = tf.nn.relu(W2)
 
 # Classification
 y_hat = tf.nn.softmax(softmax_layer)
