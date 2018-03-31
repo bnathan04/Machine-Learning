@@ -42,7 +42,7 @@ def build_layer(X, num_hidden_units):
     # initialize the weight matrix and bias vector
     num_inputs = X.get_shape().as_list()[-1]
     W = tf.get_variable(name="Weights", shape=(num_inputs, num_hidden_units), dtype=tf.float64, initializer=tf.contrib.layers.xavier_initializer())
-    b = tf.get_variable(name="Bias", shape=(num_hidden_units, 1), dtype=tf.float64, initializer=tf.contrib.layers.xavier_initializer())
+    b = tf.get_variable(name="Bias", shape=(1, num_hidden_units), dtype=tf.float64, initializer=tf.contrib.layers.xavier_initializer())
 
     # input to next layer
     z = tf.add(tf.matmul(X,W), b)
