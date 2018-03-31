@@ -145,6 +145,7 @@ for count, rate in enumerate(learning_rate):
             print("---------- {} STEPS FINISHED - Results ----------".format(train_step))
             print("Train loss:", train_loss[cur_epoch], "Valid loss:", valid_loss[cur_epoch], "Test loss:", test_loss[cur_epoch])
             print("Train error:", train_err[cur_epoch], "Valid error:", valid_err[cur_epoch], "Test error:", test_err[cur_epoch])
+            print("Optimizer value: {}".format(optimizer_value))
             print("---------- END ----------")
 
     # Choose best learning rate based using validation cross entropy loss as metric
