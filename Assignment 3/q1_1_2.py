@@ -104,9 +104,9 @@ valid_err = np.zeros(num_epoch)
 test_err = np.zeros(num_epoch)
 
 best_train_err = []
-best_train_loss = []
+best_train_loss = np.full((num_epoch), 99)
 best_valid_err = []
-best_valid_loss = np.full((num_train_steps), 99)
+best_valid_loss = []
 best_test_err = []
 best_test_loss = []
 best_rate = 0
@@ -143,13 +143,15 @@ for count, rate in enumerate(learning_rate):
             [test_loss[cur_epoch], test_err[cur_epoch]] = sess.run(fetches=[ce_loss, error], 
                                                                 feed_dict={X: testData, Y: testTarget})
 
-            print("---------- EPOCH FINISHED - Results ----------")
+        if train_step % 1000 == 0:
+            print("---------- {} STEPS FINISHED - Results ----------", train_step)
             print("Train loss:", train_loss[cur_epoch], "Valid loss:", valid_loss[cur_epoch], "Test loss:", test_loss[cur_epoch])
             print("Train error:", train_err[cur_epoch], "Valid error:", valid_err[cur_epoch], "Test error:", test_err[cur_epoch])
             print("---------- END ----------")
 
     # Choose best learning rate based using validation cross entropy loss as metric
     if count == 0:
+        print("update from first run through")
         best_rate = count
         best_valid_loss = copy.deepcopy(valid_loss)
         best_valid_err = copy.deepcopy(valid_err)
@@ -158,7 +160,8 @@ for count, rate in enumerate(learning_rate):
         best_test_loss = copy.deepcopy(test_loss)
         best_test_err = copy.deepcopy(test_err)
 
-    elif best_valid_loss[-1] > valid_loss[-1]:
+    elif best_train_loss[-1] > train_loss[-1]:
+        print("updated best LR")
         best_rate = count
         best_valid_loss = copy.deepcopy(valid_loss)
         best_valid_err = copy.deepcopy(valid_err)
