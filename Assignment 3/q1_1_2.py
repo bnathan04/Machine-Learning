@@ -54,10 +54,10 @@ def build_layer(X, num_hidden_units):
 
 
 # Cross Entropy Loss calculation function
-def calculate_ce_loss (W1, W2, truth, prediction, coeff):
+def calculate_ce_loss (truth, prediction, coeff):
 
-    regularizer1 = (coeff / 2) * tf.reduce_sum(tf.square(W1))
-    regularizer2 = (coeff / 2) * tf.reduce_sum(tf.square(W2))
+    regularizer1 = (coeff / 2) * tf.reduce_sum(tf.square(tf.get_default_graph().get_tensor_by_name("hidden_layer/Weights:0")))
+    regularizer2 = (coeff / 2) * tf.reduce_sum(tf.square(tf.get_default_graph().get_tensor_by_name("softmax_layer/Weights:0")))
     ce_loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(labels=truth, logits=prediction))
     total_loss = ce_loss + regularizer1 + regularizer2
     return total_loss
@@ -90,7 +90,7 @@ is_correct = tf.equal(tf.argmax(y_hat, 1), tf.cast(Y, tf.int64))
 error = 1 - (tf.reduce_mean(tf.cast(is_correct, tf.float32)))
 
 # Loss calculations
-ce_loss = calculate_ce_loss(W1, W2, tf.one_hot(tf.cast(Y, tf.int32), depth=10, axis=-1),
+ce_loss = calculate_ce_loss(tf.one_hot(tf.cast(Y, tf.int32), depth=10, axis=-1),
                                   y_hat, weight_decay)
 
 # Empty arrays to record loss and error data
