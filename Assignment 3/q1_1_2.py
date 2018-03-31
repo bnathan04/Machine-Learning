@@ -74,12 +74,10 @@ learning_rate = [0.005, 0.001, 0.0001]
 X = tf.placeholder(tf.float64, shape=[None, trainData.shape[1]], name="Data")
 Y = tf.placeholder(tf.float64, shape=[None, num_categories], name="Label")
 
-# Set up place holders for the weights; 3 layers => two W matrices
+# Build the network using ReLU activation; 3 layers => two W matrices
 W1 = build_layer(X, num_hidden_units)
-W2 = build_layer(W1, num_categories)
-
-# Build network using ReLU activation
 hidden_layer = tf.nn.relu(W1)
+W2 = build_layer(hidden_layer, num_categories)
 softmax_layer = tf.nn.relu(W2)
 
 # Classification
