@@ -94,15 +94,15 @@ ce_loss = calculate_ce_loss(tf.one_hot(tf.cast(Y, tf.int32), depth=10, axis=-1),
                                   y_hat, weight_decay)
 
 # Empty arrays to record loss and error data
-train_loss = np.zeros(num_epoch)
-valid_loss = np.zeros(num_epoch)
-test_loss = np.zeros(num_epoch)
-train_err = np.zeros(num_epoch)
-valid_err = np.zeros(num_epoch)
-test_err = np.zeros(num_epoch)
+train_loss = np.zeros(num_train_steps)
+valid_loss = np.zeros(num_train_steps)
+test_loss = np.zeros(num_train_steps)
+train_err = np.zeros(num_train_steps)
+valid_err = np.zeros(num_train_steps)
+test_err = np.zeros(num_train_steps)
 
 best_train_err = []
-best_train_loss = np.full((num_epoch), 99)
+best_train_loss = np.full((num_train_steps), 99)
 best_valid_err = []
 best_valid_loss = []
 best_test_err = []
@@ -127,24 +127,24 @@ for count, rate in enumerate(learning_rate):
         optimizer_value = sess.run(optimizer, feed_dict={X: cur_data, Y: cur_target})
 
         # Every epoch, store the loss and error data
-        if (train_step * mini_batch_size) % num_data == 0:            
+        # if (train_step * mini_batch_size) % num_data == 0:            
 
-            cur_epoch = (train_step * mini_batch_size) / num_data
+        # cur_epoch = (train_step * mini_batch_size) / num_data
 
-            # Get loss and error
-            [train_loss[cur_epoch], train_err[cur_epoch]] = sess.run(fetches=[ce_loss, error], 
-                                                                feed_dict={X: cur_data, Y: cur_target})
+        # Get loss and error
+        [train_loss[train_step], train_err[train_step]] = sess.run(fetches=[ce_loss, error], 
+                                                            feed_dict={X: cur_data, Y: cur_target})
 
-            [valid_loss[cur_epoch], valid_err[cur_epoch]] = sess.run(fetches=[ce_loss, error], 
-                                                                feed_dict={X: validData, Y: validTarget})
+        [valid_loss[train_step], valid_err[train_step]] = sess.run(fetches=[ce_loss, error], 
+                                                            feed_dict={X: validData, Y: validTarget})
 
-            [test_loss[cur_epoch], test_err[cur_epoch]] = sess.run(fetches=[ce_loss, error], 
-                                                                feed_dict={X: testData, Y: testTarget})
+        [test_loss[train_step], test_err[train_step]] = sess.run(fetches=[ce_loss, error], 
+                                                            feed_dict={X: testData, Y: testTarget})
 
         if train_step % 1000 == 0:
             print("---------- {} STEPS FINISHED - Results ----------".format(train_step))
-            print("Train loss:", train_loss[cur_epoch], "Valid loss:", valid_loss[cur_epoch], "Test loss:", test_loss[cur_epoch])
-            print("Train error:", train_err[cur_epoch], "Valid error:", valid_err[cur_epoch], "Test error:", test_err[cur_epoch])
+            print("Train loss:", train_loss[train_step], "Valid loss:", valid_loss[train_step], "Test loss:", test_loss[train_step])
+            print("Train error:", train_err[train_step], "Valid error:", valid_err[train_step], "Test error:", test_err[train_step])
             print("Optimizer value: {}".format(optimizer_value))
             print("---------- END ----------")
 
