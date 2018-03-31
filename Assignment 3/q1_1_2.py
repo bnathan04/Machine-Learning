@@ -71,7 +71,7 @@ num_data = trainData.shape[0]
 num_epoch = int(math.ceil((num_train_steps * mini_batch_size)/num_data))
 num_batches = num_data // mini_batch_size
 num_hidden_units = 1000
-learning_rate = [0.005, 0.001, 0.0001]
+learning_rate = [0.0001, 0.00001, 0.000001]
 
 # Set up place holders for the tf graph
 X = tf.placeholder(tf.float64, shape=[None, trainData.shape[1]], name="Data")
@@ -79,12 +79,10 @@ Y = tf.placeholder(tf.float64, shape=[None, 1], name="Label")
 
 # Build the network using ReLU activation; 3 layers => two W matrices
 with tf.variable_scope("hidden_layer"):
-    W1 = build_layer(X, num_hidden_units)
-    hidden_layer = tf.nn.relu(W1)
+    hidden_layer = tf.nn.relu(build_layer(X, num_hidden_units))
 
 with tf.variable_scope("softmax_layer"):    
-    W2 = build_layer(hidden_layer, num_categories)
-    softmax_layer = tf.nn.relu(W2)
+    softmax_layer = tf.nn.relu(build_layer(hidden_layer, num_categories))
 
 # Classification
 y_hat = tf.nn.softmax(softmax_layer)
@@ -144,7 +142,7 @@ for count, rate in enumerate(learning_rate):
                                                                 feed_dict={X: testData, Y: testTarget})
 
         if train_step % 1000 == 0:
-            print("---------- {} STEPS FINISHED - Results ----------", train_step)
+            print("---------- {} STEPS FINISHED - Results ----------".format(train_step)
             print("Train loss:", train_loss[cur_epoch], "Valid loss:", valid_loss[cur_epoch], "Test loss:", test_loss[cur_epoch])
             print("Train error:", train_err[cur_epoch], "Valid error:", valid_err[cur_epoch], "Test error:", test_err[cur_epoch])
             print("---------- END ----------")
