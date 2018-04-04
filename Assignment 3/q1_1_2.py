@@ -1,5 +1,5 @@
-import tensorflow as tf
 import numpy as np 
+import tensorflow as tf
 import math
 import matplotlib.pyplot as plt
 import copy
@@ -30,13 +30,13 @@ validTarget = np.reshape(validTarget, (-1, 1))
 testTarget = np.reshape(testTarget, (-1, 1))
 num_categories = 10
 
-# print "-------- New shapes ----------"
-# print "Train Data Shape:", trainData.shape
-# print "Train Target Shape:", trainTarget.shape
-# print "Valid Data Shape:", validData.shape
-# print "Valid Target Shape:", validTarget.shape
-# print "Test Data Shape:", testData.shape
-# print "Test Target Shape:", testTarget.shape
+print "-------- New shapes ----------"
+print "Train Data Shape:", trainData.shape
+print "Train Target Shape:", trainTarget.shape
+print "Valid Data Shape:", validData.shape
+print "Valid Target Shape:", validTarget.shape
+print "Test Data Shape:", testData.shape
+print "Test Target Shape:", testTarget.shape
 
 
 # build a layer in NN
@@ -45,7 +45,7 @@ def build_layer(X, num_hidden_units):
     # initialize the weight matrix and bias vector
     num_inputs = X.get_shape().as_list()[-1]
     W = tf.get_variable(name="Weights", shape=(num_inputs, num_hidden_units), dtype=tf.float64, initializer=tf.contrib.layers.xavier_initializer())
-    b = tf.get_variable(name="Bias", shape=(1, num_hidden_units), dtype=tf.float64, initializer=tf.contrib.layers.xavier_initializer())
+    b = tf.Variable(tf.zeros(shape=(1, num_hidden_units), dtype=tf.float64, name="Bias"))
 
     # input to next layer
     z = tf.add(tf.matmul(X,W), b)
@@ -64,14 +64,14 @@ def calculate_ce_loss (truth, prediction, coeff):
 
 
 # set up hyper parameters 
-num_train_steps = 15000
+num_train_steps = 1000
 mini_batch_size = 500
 weight_decay = 3e-4
 num_data = trainData.shape[0]
 num_epoch = int(math.ceil((num_train_steps * mini_batch_size)/num_data))
 num_batches = num_data // mini_batch_size
 num_hidden_units = 1000
-learning_rate = [0.0001, 0.00001, 0.000001]
+learning_rate = [0.0001, 0.001, 0.005]
 
 # Set up place holders for the tf graph
 X = tf.placeholder(tf.float64, shape=[None, trainData.shape[1]], name="Data")
@@ -86,30 +86,43 @@ with tf.variable_scope("softmax_layer"):
 
 # Classification
 y_hat = tf.nn.softmax(softmax_layer)
-is_correct = tf.equal(tf.argmax(y_hat, 1), tf.cast(Y, tf.int64))
+is_correct = tf.equal(tf.expand_dims(tf.argmax(y_hat, 1), 1), tf.cast(Y, tf.int64))
 error = 1 - (tf.reduce_mean(tf.cast(is_correct, tf.float32)))
 
 # Loss calculations
 ce_loss = calculate_ce_loss(tf.one_hot(tf.cast(Y, tf.int32), depth=10, axis=-1),
-                                  y_hat, weight_decay)
+                                  softmax_layer, weight_decay)
 
 # Empty arrays to record loss and error data
-train_loss = np.zeros(num_train_steps)
-valid_loss = np.zeros(num_train_steps)
-test_loss = np.zeros(num_train_steps)
-train_err = np.zeros(num_train_steps)
-valid_err = np.zeros(num_train_steps)
-test_err = np.zeros(num_train_steps)
+train_loss = np.zeros(num_epoch)
+valid_loss = np.zeros(num_epoch)
+test_loss = np.zeros(num_epoch)
+train_err = np.zeros(num_epoch)
+valid_err = np.zeros(num_epoch)
+test_err = np.zeros(num_epoch)
 
 best_train_err = []
-best_train_loss = np.full((num_train_steps), 99)
+best_train_loss = np.full((num_epoch), 99)
 best_valid_err = []
 best_valid_loss = []
 best_test_err = []
 best_test_loss = []
 best_rate = 0
 
+# Graph x axis space
+x_axis = [x+1 for x in range(num_epoch)]
+fig_LR = plt.figure(1)
+plt.title = "Training Loss vs. Epoch"
+plt.ylabel('Cross Entropy Loss')
+plt.xlabel('Epoch')
+plt.grid(True)
+# fig_LR.yticks([y for y in range(100) if y % 5 == 0])
 
+
+
+
+# File setup
+f = open("1_1_2_stats.txt", "w+")
 # Train
 for count, rate in enumerate(learning_rate):
 
@@ -129,28 +142,38 @@ for count, rate in enumerate(learning_rate):
         # Every epoch, store the loss and error data
         # if (train_step * mini_batch_size) % num_data == 0:            
 
-        # cur_epoch = (train_step * mini_batch_size) / num_data
+        cur_epoch = (((train_step + 1) * mini_batch_size) / num_data) - 1
 
-        # Get loss and error
-        [train_loss[train_step], train_err[train_step]] = sess.run(fetches=[ce_loss, error], 
-                                                            feed_dict={X: cur_data, Y: cur_target})
+        if ((train_step + 1) * mini_batch_size) % num_data == 0:
+            # Get loss and error
+            [train_loss[cur_epoch], train_err[cur_epoch]] = sess.run(fetches=[ce_loss, error], 
+                                                                feed_dict={X: cur_data, Y: cur_target})
 
-        [valid_loss[train_step], valid_err[train_step]] = sess.run(fetches=[ce_loss, error], 
-                                                            feed_dict={X: validData, Y: validTarget})
+            [valid_loss[cur_epoch], valid_err[cur_epoch]] = sess.run(fetches=[ce_loss, error], 
+                                                                feed_dict={X: validData, Y: validTarget})
 
-        [test_loss[train_step], test_err[train_step]] = sess.run(fetches=[ce_loss, error], 
-                                                            feed_dict={X: testData, Y: testTarget})
+            [test_loss[cur_epoch], test_err[cur_epoch]] = sess.run(fetches=[ce_loss, error], 
+                                                                feed_dict={X: testData, Y: testTarget})
 
-        if train_step % 1000 == 0:
-            print("---------- {} STEPS FINISHED - Results ----------".format(train_step))
-            print("Train loss:", train_loss[train_step], "Valid loss:", valid_loss[train_step], "Test loss:", test_loss[train_step])
-            print("Train error:", train_err[train_step], "Valid error:", valid_err[train_step], "Test error:", test_err[train_step])
-            print("Optimizer value: {}".format(optimizer_value))
+            print("---------- {} EPOCH(S) FINISHED AT {} = {} - Results ----------".format(cur_epoch + 1, 'LR', rate))
+            print("Train loss:", train_loss[cur_epoch], "Valid loss:", valid_loss[cur_epoch], "Test loss:", test_loss[cur_epoch])
+            print("Train error:",  train_err[cur_epoch], "Valid error:", valid_err[cur_epoch], "Test error:", test_err[cur_epoch])
+            # print("Optimizer value: {}".format(optimizer_value))
             print("---------- END ----------")
 
+            f.write("---------- %d EPOCH(S) FINISHED AT %s = %f - Results ----------\n" % (cur_epoch + 1, 'LR', rate))
+            f.write("Train loss: %f, Valid loss: %f, Test loss: %f\n" % (train_loss[cur_epoch], valid_loss[cur_epoch],test_loss[cur_epoch]))
+            f.write("Train error: %f, Valid error: %f, Test error: %f\n" % (train_err[cur_epoch], valid_err[cur_epoch],test_err[cur_epoch]))
+            # f.write("Optimizer value: {}".format(optimizer_value))
+            f.write("---------- END ----------\r\n")
+
     # Choose best learning rate based using validation cross entropy loss as metric
-    if count == 0:
-        print("update from first run through")
+    print("END OF RUN for learning rate: {}".format(rate))
+    print("Results - final train loss: {}, final valid error: {}, current best train loss: {}".format(train_loss[-1], valid_err[-1], best_train_loss[-1]))
+    plt.plot(x_axis, train_loss, '-', label=(r'$\eta =$') + str(rate))
+
+    if count == 1:
+        print("Get best training run: {}".format(count))
         best_rate = count
         best_valid_loss = copy.deepcopy(valid_loss)
         best_valid_err = copy.deepcopy(valid_err)
@@ -159,17 +182,40 @@ for count, rate in enumerate(learning_rate):
         best_test_loss = copy.deepcopy(test_loss)
         best_test_err = copy.deepcopy(test_err)
 
-    elif best_train_loss[-1] > train_loss[-1]:
-        print("updated best LR")
-        best_rate = count
-        best_valid_loss = copy.deepcopy(valid_loss)
-        best_valid_err = copy.deepcopy(valid_err)
-        best_train_loss = copy.deepcopy(train_loss)
-        best_train_err = copy.deepcopy(train_err)
-        best_test_loss = copy.deepcopy(test_loss)
-        best_test_err = copy.deepcopy(test_err)
+plt.legend(loc="best")
+fig_LR.savefig("1_1_2_LR.png")
+plt.show()
 
+fig_error = plt.figure(2)
+plt.title = "Classfication Error vs. Epoch"
+plt.ylabel('Error')
+plt.xlabel('Epoch')
+plt.grid(True)
+# plt.yticks([y for y in range(100) if y % 5 == 0])
+
+plt.plot(x_axis, best_train_err, '-', label=('Training'))
+plt.plot(x_axis, best_valid_err, '-', label=('Validation'))
+plt.plot(x_axis, best_test_err, '-', label=('Test'))
+
+plt.legend(loc="best")
+fig_error.savefig("1_1_2_error.png")
+plt.show()
+
+fig_loss = plt.figure(3)
+plt.title = "Cross Entropy Loss vs. Epoch"
+plt.ylabel('Cross Entropy Loss')
+plt.xlabel('Epoch')
+plt.grid(True)
+# fig_loss.yticks([y for y in range(100) if y % 5 == 0])
+
+plt.plot(x_axis, best_train_loss, '-', label=('Training'))
+plt.plot(x_axis, best_valid_loss, '-', label=('Validation'))
+plt.plot(x_axis, best_test_loss, '-', label=('Test'))
+
+plt.legend(loc="best")
+fig_loss.savefig("1_1_2_loss.png")
+plt.show()
 
 print("Best Learning Rate = ", learning_rate[best_rate])
-print("Best Classification Error (train/valid/test) = ", best_train_err[-1],
-      best_valid_err[-1], best_test_err[-1])
+print("Best Classification Error (train/valid/test) = ", train_err[-1],
+      valid_err[-1], test_err[-1])
