@@ -71,7 +71,7 @@ weight_decay = 3e-4
 num_data = trainData.shape[0]
 num_epoch = int(math.ceil((num_train_steps * mini_batch_size)/num_data))
 num_batches = num_data // mini_batch_size
-num_hidden_units = 100
+num_hidden_units = 500
 # H = 1000
 learning_rate = 0.001
 
@@ -125,7 +125,7 @@ plt.grid(True)
 
 
 # File setup
-f = open("1_2_1_100.txt", "w+")
+f = open("1_2_1_500.txt", "w+")
 # Train
 # for count, units in enumerate(num_hidden_units):
 
@@ -187,7 +187,7 @@ plt.plot(x_axis, valid_err, '-', label=str(num_hidden_units) + ' hidden units')
     #     best_test_err = copy.deepcopy(test_err)
 
 plt.legend(loc="best")
-fig_LR.savefig("1_2_1_100_hidden_units.png")
+fig_LR.savefig("1_2_1_500_hidden_units.png")
 plt.show()
 
 # fig_error = plt.figure(2)
