@@ -159,22 +159,22 @@ for train_step in range(num_train_steps):
         [test_loss[cur_epoch], test_err[cur_epoch]] = sess.run(fetches=[ce_loss, error], 
                                                             feed_dict={X: testData, Y: testTarget})
 
-        print("---------- {} EPOCH(S) FINISHED AT {} = {} - Results ----------".format(cur_epoch + 1, 'H', units))
+        print("---------- {} EPOCH(S) FINISHED AT {} = {} - Results ----------".format(cur_epoch + 1, 'H', num_hidden_units))
         print("Train loss:", train_loss[cur_epoch], "Valid loss:", valid_loss[cur_epoch], "Test loss:", test_loss[cur_epoch])
         print("Train error:",  train_err[cur_epoch], "Valid error:", valid_err[cur_epoch], "Test error:", test_err[cur_epoch])
         # print("Optimizer value: {}".format(optimizer_value))
         print("---------- END ----------")
 
-        f.write("---------- %d EPOCH(S) FINISHED AT %s = %f - Results ----------\n" % (cur_epoch + 1, 'H', units))
+        f.write("---------- %d EPOCH(S) FINISHED AT %s = %f - Results ----------\n" % (cur_epoch + 1, 'H', num_hidden_units))
         f.write("Train loss: %f, Valid loss: %f, Test loss: %f\n" % (train_loss[cur_epoch], valid_loss[cur_epoch],test_loss[cur_epoch]))
         f.write("Train error: %f, Valid error: %f, Test error: %f\n" % (train_err[cur_epoch], valid_err[cur_epoch],test_err[cur_epoch]))
         # f.write("Optimizer value: {}".format(optimizer_value))
         f.write("---------- END ----------\r\n")
 
 # Choose best learning rate based using validation cross entropy loss as metric
-print("END OF RUN for H: {}".format(units))
+print("END OF RUN for H: {}".format(num_hidden_units))
 print("Results - final train loss: {}, final valid error: {}, current best train loss: {}".format(train_loss[-1], valid_err[-1], best_train_loss[-1]))
-plt.plot(x_axis, valid_err, '-', label=str(units) + 'hidden units')
+plt.plot(x_axis, valid_err, '-', label=str(num_hidden_units) + 'hidden units')
 
     # if count == 1:
     #     print("Get best training run: {}".format(count))
