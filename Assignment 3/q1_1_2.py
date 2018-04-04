@@ -64,7 +64,7 @@ def calculate_ce_loss (truth, prediction, coeff):
 
 
 # set up hyper parameters 
-num_train_steps = 1000
+num_train_steps = 15000
 mini_batch_size = 500
 weight_decay = 3e-4
 num_data = trainData.shape[0]
