@@ -40,7 +40,7 @@ num_categories = 10
 
 
 # build a layer in NN
-def build_layer(X, hidden_units):
+def build_layer(X, num_hidden_units):
     
     # initialize the weight matrix and bias vector
     num_inputs = X.get_shape().as_list()[-1]
