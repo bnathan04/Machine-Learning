@@ -151,13 +151,13 @@ for count, units in enumerate(num_hidden_units):
         if ((train_step + 1) * mini_batch_size) % num_data == 0:
             # Get loss and error
             [train_loss[cur_epoch], train_err[cur_epoch]] = sess.run(fetches=[ce_loss, error], 
-                                                                feed_dict={X: cur_data, Y: cur_target, H: units})
+                                                                feed_dict={X: cur_data, Y: cur_target})
 
             [valid_loss[cur_epoch], valid_err[cur_epoch]] = sess.run(fetches=[ce_loss, error], 
-                                                                feed_dict={X: validData, Y: validTarget, H: units})
+                                                                feed_dict={X: validData, Y: validTarget})
 
             [test_loss[cur_epoch], test_err[cur_epoch]] = sess.run(fetches=[ce_loss, error], 
-                                                                feed_dict={X: testData, Y: testTarget, H: units})
+                                                                feed_dict={X: testData, Y: testTarget})
 
             print("---------- {} EPOCH(S) FINISHED AT {} = {} - Results ----------".format(cur_epoch + 1, 'LR', rate))
             print("Train loss:", train_loss[cur_epoch], "Valid loss:", valid_loss[cur_epoch], "Test loss:", test_loss[cur_epoch])
