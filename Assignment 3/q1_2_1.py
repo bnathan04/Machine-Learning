@@ -44,7 +44,7 @@ def build_layer(X, hidden_units):
     
     # initialize the weight matrix and bias vector
     num_inputs = X.get_shape().as_list()[-1]
-    num_hidden_units = tf.Session().run(hidden_units)
+    print("num hidden units:" + hidden_units)
     W = tf.get_variable(name="Weights", shape=(num_inputs, num_hidden_units), dtype=tf.float64, initializer=tf.contrib.layers.xavier_initializer())
     b = tf.Variable(tf.zeros(shape=(1, num_hidden_units), dtype=tf.float64, name="Bias"))
 
@@ -72,12 +72,13 @@ num_data = trainData.shape[0]
 num_epoch = int(math.ceil((num_train_steps * mini_batch_size)/num_data))
 num_batches = num_data // mini_batch_size
 num_hidden_units = [100, 500, 1000]
+H = 0
 learning_rate = 0.001
 
 # Set up place holders for the tf graph
 X = tf.placeholder(tf.float64, shape=[None, trainData.shape[1]], name="Data")
 Y = tf.placeholder(tf.float64, shape=[None, 1], name="Label")
-H = tf.placeholder(tf.int64, shape=[None], name="Hidden_Units")
+# H = tf.placeholder(tf.int64, shape=[None], name="Hidden_Units")
 
 # Build the network using ReLU activation; 3 layers => two W matrices
 with tf.variable_scope("hidden_layer"):
@@ -132,6 +133,7 @@ for count, units in enumerate(num_hidden_units):
     optimizer = tf.train.AdamOptimizer(learning_rate=learning_rate).minimize(ce_loss)
     sess = tf.Session()
     sess.run(tf.global_variables_initializer())
+    H = units
 
     for train_step in range(num_train_steps):
         
@@ -188,20 +190,20 @@ plt.legend(loc="best")
 fig_LR.savefig("1_2_1_hidden_units.png")
 plt.show()
 
-fig_error = plt.figure(2)
-plt.title = "Test Classfication Error vs. Epoch"
-plt.ylabel('Error')
-plt.xlabel('Epoch')
-plt.grid(True)
+# fig_error = plt.figure(2)
+# plt.title = "Test Classfication Error vs. Epoch"
+# plt.ylabel('Error')
+# plt.xlabel('Epoch')
+# plt.grid(True)
 # plt.yticks([y for y in range(100) if y % 5 == 0])
 
 # plt.plot(x_axis, best_train_err, '-', label=('Training'))
 # plt.plot(x_axis, best_valid_err, '-', label=('Validation'))
-plt.plot(x_axis, best_test_err, '-', label=('Test'))
+# plt.plot(x_axis, best_test_err, '-', label=('Test'))
 
-plt.legend(loc="best")
-fig_error.savefig("1_2_1_error.png")
-plt.show()
+# plt.legend(loc="best")
+# fig_error.savefig("1_2_1_error.png")
+# plt.show()
 
 # fig_loss = plt.figure(3)
 # plt.title = "Cross Entropy Loss vs. Epoch"
