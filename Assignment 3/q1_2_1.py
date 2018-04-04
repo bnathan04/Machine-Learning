@@ -71,18 +71,18 @@ weight_decay = 3e-4
 num_data = trainData.shape[0]
 num_epoch = int(math.ceil((num_train_steps * mini_batch_size)/num_data))
 num_batches = num_data // mini_batch_size
-num_hidden_units = [100, 500, 1000]
+num_hidden_units = 100
 # H = 1000
 learning_rate = 0.001
 
 # Set up place holders for the tf graph
 X = tf.placeholder(tf.float64, shape=[None, trainData.shape[1]], name="Data")
 Y = tf.placeholder(tf.float64, shape=[None, 1], name="Label")
-H = tf.placeholder(tf.int64, shape=(), name="Hidden_Units")
+# H = tf.placeholder(tf.int64, shape=(), name="Hidden_Units")
 
 # Build the network using ReLU activation; 3 layers => two W matrices
 with tf.variable_scope("hidden_layer"):
-    hidden_layer = tf.nn.relu(build_layer(X, H)))
+    hidden_layer = tf.nn.relu(build_layer(X, num_hidden_units))
 
 with tf.variable_scope("softmax_layer"):    
     softmax_layer = tf.nn.relu(build_layer(hidden_layer, num_categories))
@@ -125,56 +125,56 @@ plt.grid(True)
 
 
 # File setup
-f = open("1_2_1_stats.txt", "w+")
+f = open("1_2_1_100.txt", "w+")
 # Train
-for count, units in enumerate(num_hidden_units):
+# for count, units in enumerate(num_hidden_units):
 
-    # Start session, (re)init variables and optimizer
-    optimizer = tf.train.AdamOptimizer(learning_rate=learning_rate).minimize(ce_loss)
-    sess = tf.Session()
-    sess.run(tf.global_variables_initializer())
-    # H = units
+# Start session, (re)init variables and optimizer
+optimizer = tf.train.AdamOptimizer(learning_rate=learning_rate).minimize(ce_loss)
+sess = tf.Session()
+sess.run(tf.global_variables_initializer())
+# H = units
 
-    for train_step in range(num_train_steps):
-        
-        # Get current batch data
-        cur_batch_idx = (train_step % num_batches) * mini_batch_size
-        cur_data = trainData[cur_batch_idx:cur_batch_idx + mini_batch_size]
-        cur_target = trainTarget[cur_batch_idx:cur_batch_idx + mini_batch_size]
-        optimizer_value = sess.run(optimizer, feed_dict={X: cur_data, Y: cur_target})
+for train_step in range(num_train_steps):
+    
+    # Get current batch data
+    cur_batch_idx = (train_step % num_batches) * mini_batch_size
+    cur_data = trainData[cur_batch_idx:cur_batch_idx + mini_batch_size]
+    cur_target = trainTarget[cur_batch_idx:cur_batch_idx + mini_batch_size]
+    optimizer_value = sess.run(optimizer, feed_dict={X: cur_data, Y: cur_target})
 
-        # Every epoch, store the loss and error data
-        # if (train_step * mini_batch_size) % num_data == 0:            
+    # Every epoch, store the loss and error data
+    # if (train_step * mini_batch_size) % num_data == 0:            
 
-        cur_epoch = (((train_step + 1) * mini_batch_size) / num_data) - 1
+    cur_epoch = (((train_step + 1) * mini_batch_size) / num_data) - 1
 
-        if ((train_step + 1) * mini_batch_size) % num_data == 0:
-            # Get loss and error
-            [train_loss[cur_epoch], train_err[cur_epoch]] = sess.run(fetches=[ce_loss, error], 
-                                                                feed_dict={X: cur_data, Y: cur_target, H: num_hidden_units})
+    if ((train_step + 1) * mini_batch_size) % num_data == 0:
+        # Get loss and error
+        [train_loss[cur_epoch], train_err[cur_epoch]] = sess.run(fetches=[ce_loss, error], 
+                                                            feed_dict={X: cur_data, Y: cur_target})
 
-            [valid_loss[cur_epoch], valid_err[cur_epoch]] = sess.run(fetches=[ce_loss, error], 
-                                                                feed_dict={X: validData, Y: validTarget, H: num_hidden_units})
+        [valid_loss[cur_epoch], valid_err[cur_epoch]] = sess.run(fetches=[ce_loss, error], 
+                                                            feed_dict={X: validData, Y: validTarget})
 
-            [test_loss[cur_epoch], test_err[cur_epoch]] = sess.run(fetches=[ce_loss, error], 
-                                                                feed_dict={X: testData, Y: testTarget, H: num_hidden_units})
+        [test_loss[cur_epoch], test_err[cur_epoch]] = sess.run(fetches=[ce_loss, error], 
+                                                            feed_dict={X: testData, Y: testTarget})
 
-            print("---------- {} EPOCH(S) FINISHED AT {} = {} - Results ----------".format(cur_epoch + 1, 'H', units))
-            print("Train loss:", train_loss[cur_epoch], "Valid loss:", valid_loss[cur_epoch], "Test loss:", test_loss[cur_epoch])
-            print("Train error:",  train_err[cur_epoch], "Valid error:", valid_err[cur_epoch], "Test error:", test_err[cur_epoch])
-            # print("Optimizer value: {}".format(optimizer_value))
-            print("---------- END ----------")
+        print("---------- {} EPOCH(S) FINISHED AT {} = {} - Results ----------".format(cur_epoch + 1, 'H', units))
+        print("Train loss:", train_loss[cur_epoch], "Valid loss:", valid_loss[cur_epoch], "Test loss:", test_loss[cur_epoch])
+        print("Train error:",  train_err[cur_epoch], "Valid error:", valid_err[cur_epoch], "Test error:", test_err[cur_epoch])
+        # print("Optimizer value: {}".format(optimizer_value))
+        print("---------- END ----------")
 
-            f.write("---------- %d EPOCH(S) FINISHED AT %s = %f - Results ----------\n" % (cur_epoch + 1, 'H', units))
-            f.write("Train loss: %f, Valid loss: %f, Test loss: %f\n" % (train_loss[cur_epoch], valid_loss[cur_epoch],test_loss[cur_epoch]))
-            f.write("Train error: %f, Valid error: %f, Test error: %f\n" % (train_err[cur_epoch], valid_err[cur_epoch],test_err[cur_epoch]))
-            # f.write("Optimizer value: {}".format(optimizer_value))
-            f.write("---------- END ----------\r\n")
+        f.write("---------- %d EPOCH(S) FINISHED AT %s = %f - Results ----------\n" % (cur_epoch + 1, 'H', units))
+        f.write("Train loss: %f, Valid loss: %f, Test loss: %f\n" % (train_loss[cur_epoch], valid_loss[cur_epoch],test_loss[cur_epoch]))
+        f.write("Train error: %f, Valid error: %f, Test error: %f\n" % (train_err[cur_epoch], valid_err[cur_epoch],test_err[cur_epoch]))
+        # f.write("Optimizer value: {}".format(optimizer_value))
+        f.write("---------- END ----------\r\n")
 
-    # Choose best learning rate based using validation cross entropy loss as metric
-    print("END OF RUN for H: {}".format(units))
-    print("Results - final train loss: {}, final valid error: {}, current best train loss: {}".format(train_loss[-1], valid_err[-1], best_train_loss[-1]))
-    plt.plot(x_axis, valid_err, '-', label=str(units) + 'hidden units')
+# Choose best learning rate based using validation cross entropy loss as metric
+print("END OF RUN for H: {}".format(units))
+print("Results - final train loss: {}, final valid error: {}, current best train loss: {}".format(train_loss[-1], valid_err[-1], best_train_loss[-1]))
+plt.plot(x_axis, valid_err, '-', label=str(units) + 'hidden units')
 
     # if count == 1:
     #     print("Get best training run: {}".format(count))
@@ -187,7 +187,7 @@ for count, units in enumerate(num_hidden_units):
     #     best_test_err = copy.deepcopy(test_err)
 
 plt.legend(loc="best")
-fig_LR.savefig("1_2_1_hidden_units.png")
+fig_LR.savefig("1_2_1_100_hidden_units.png")
 plt.show()
 
 # fig_error = plt.figure(2)
