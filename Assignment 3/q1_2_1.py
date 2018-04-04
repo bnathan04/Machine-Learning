@@ -174,7 +174,7 @@ for train_step in range(num_train_steps):
 # Choose best learning rate based using validation cross entropy loss as metric
 print("END OF RUN for H: {}".format(num_hidden_units))
 print("Results - final train loss: {}, final valid error: {}, current best train loss: {}".format(train_loss[-1], valid_err[-1], best_train_loss[-1]))
-plt.plot(x_axis, valid_err, '-', label=str(num_hidden_units) + 'hidden units')
+plt.plot(x_axis, valid_err, '-', label=str(num_hidden_units) + ' hidden units')
 
     # if count == 1:
     #     print("Get best training run: {}".format(count))
