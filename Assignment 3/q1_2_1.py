@@ -174,7 +174,7 @@ for count, units in enumerate(num_hidden_units):
     # Choose best learning rate based using validation cross entropy loss as metric
     print("END OF RUN for H: {}".format(units))
     print("Results - final train loss: {}, final valid error: {}, current best train loss: {}".format(train_loss[-1], valid_err[-1], best_train_loss[-1]))
-    plt.plot(x_axis, valid_err, '-', label=str(rate) + 'hidden units')
+    plt.plot(x_axis, valid_err, '-', label=str(units) + 'hidden units')
 
     # if count == 1:
     #     print("Get best training run: {}".format(count))
