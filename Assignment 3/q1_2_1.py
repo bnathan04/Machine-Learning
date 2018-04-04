@@ -72,17 +72,17 @@ num_data = trainData.shape[0]
 num_epoch = int(math.ceil((num_train_steps * mini_batch_size)/num_data))
 num_batches = num_data // mini_batch_size
 num_hidden_units = [100, 500, 1000]
-H = 0
+# H = 1000
 learning_rate = 0.001
 
 # Set up place holders for the tf graph
 X = tf.placeholder(tf.float64, shape=[None, trainData.shape[1]], name="Data")
 Y = tf.placeholder(tf.float64, shape=[None, 1], name="Label")
-# H = tf.placeholder(tf.int64, shape=[None], name="Hidden_Units")
+H = tf.placeholder(tf.int64, shape=(), name="Hidden_Units")
 
 # Build the network using ReLU activation; 3 layers => two W matrices
 with tf.variable_scope("hidden_layer"):
-    hidden_layer = tf.nn.relu(build_layer(X, int(H)))
+    hidden_layer = tf.nn.relu(build_layer(X, H)))
 
 with tf.variable_scope("softmax_layer"):    
     softmax_layer = tf.nn.relu(build_layer(hidden_layer, num_categories))
@@ -133,7 +133,7 @@ for count, units in enumerate(num_hidden_units):
     optimizer = tf.train.AdamOptimizer(learning_rate=learning_rate).minimize(ce_loss)
     sess = tf.Session()
     sess.run(tf.global_variables_initializer())
-    H = units
+    # H = units
 
     for train_step in range(num_train_steps):
         
@@ -151,13 +151,13 @@ for count, units in enumerate(num_hidden_units):
         if ((train_step + 1) * mini_batch_size) % num_data == 0:
             # Get loss and error
             [train_loss[cur_epoch], train_err[cur_epoch]] = sess.run(fetches=[ce_loss, error], 
-                                                                feed_dict={X: cur_data, Y: cur_target})
+                                                                feed_dict={X: cur_data, Y: cur_target, H: num_hidden_units})
 
             [valid_loss[cur_epoch], valid_err[cur_epoch]] = sess.run(fetches=[ce_loss, error], 
-                                                                feed_dict={X: validData, Y: validTarget})
+                                                                feed_dict={X: validData, Y: validTarget, H: num_hidden_units})
 
             [test_loss[cur_epoch], test_err[cur_epoch]] = sess.run(fetches=[ce_loss, error], 
-                                                                feed_dict={X: testData, Y: testTarget})
+                                                                feed_dict={X: testData, Y: testTarget, H: num_hidden_units})
 
             print("---------- {} EPOCH(S) FINISHED AT {} = {} - Results ----------".format(cur_epoch + 1, 'H', units))
             print("Train loss:", train_loss[cur_epoch], "Valid loss:", valid_loss[cur_epoch], "Test loss:", test_loss[cur_epoch])
