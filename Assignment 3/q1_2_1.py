@@ -82,7 +82,7 @@ Y = tf.placeholder(tf.float64, shape=[None, 1], name="Label")
 
 # Build the network using ReLU activation; 3 layers => two W matrices
 with tf.variable_scope("hidden_layer"):
-    hidden_layer = tf.nn.relu(build_layer(X, H))
+    hidden_layer = tf.nn.relu(build_layer(X, int(H)))
 
 with tf.variable_scope("softmax_layer"):    
     softmax_layer = tf.nn.relu(build_layer(hidden_layer, num_categories))
