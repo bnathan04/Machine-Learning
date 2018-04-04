@@ -40,10 +40,11 @@ num_categories = 10
 
 
 # build a layer in NN
-def build_layer(X, num_hidden_units):
+def build_layer(X, hidden_units):
     
     # initialize the weight matrix and bias vector
     num_inputs = X.get_shape().as_list()[-1]
+    num_hidden_units = tf.Session().run(hidden_units)
     W = tf.get_variable(name="Weights", shape=(num_inputs, num_hidden_units), dtype=tf.float64, initializer=tf.contrib.layers.xavier_initializer())
     b = tf.Variable(tf.zeros(shape=(1, num_hidden_units), dtype=tf.float64, name="Bias"))
 
@@ -70,16 +71,17 @@ weight_decay = 3e-4
 num_data = trainData.shape[0]
 num_epoch = int(math.ceil((num_train_steps * mini_batch_size)/num_data))
 num_batches = num_data // mini_batch_size
-num_hidden_units = 1000
-learning_rate = [0.0001, 0.001, 0.005]
+num_hidden_units = [100, 500, 1000]
+learning_rate = 0.001
 
 # Set up place holders for the tf graph
 X = tf.placeholder(tf.float64, shape=[None, trainData.shape[1]], name="Data")
 Y = tf.placeholder(tf.float64, shape=[None, 1], name="Label")
+H = tf.placeholder(tf.int64, shape=[None], name="Hidden_Units")
 
 # Build the network using ReLU activation; 3 layers => two W matrices
 with tf.variable_scope("hidden_layer"):
-    hidden_layer = tf.nn.relu(build_layer(X, num_hidden_units))
+    hidden_layer = tf.nn.relu(build_layer(X, H))
 
 with tf.variable_scope("softmax_layer"):    
     softmax_layer = tf.nn.relu(build_layer(hidden_layer, num_categories))
@@ -112,8 +114,8 @@ best_rate = 0
 # Graph x axis space
 x_axis = [x+1 for x in range(num_epoch)]
 fig_LR = plt.figure(1)
-plt.title = "Training Loss vs. Epoch"
-plt.ylabel('Cross Entropy Loss')
+plt.title = "Validation Error vs. Epoch"
+plt.ylabel('Error')
 plt.xlabel('Epoch')
 plt.grid(True)
 # fig_LR.yticks([y for y in range(100) if y % 5 == 0])
@@ -122,12 +124,12 @@ plt.grid(True)
 
 
 # File setup
-f = open("1_1_2_stats.txt", "w+")
+f = open("1_2_1_stats.txt", "w+")
 # Train
-for count, rate in enumerate(learning_rate):
+for count, units in enumerate(num_hidden_units):
 
     # Start session, (re)init variables and optimizer
-    optimizer = tf.train.AdamOptimizer(learning_rate=rate).minimize(ce_loss)
+    optimizer = tf.train.AdamOptimizer(learning_rate=learning_rate).minimize(ce_loss)
     sess = tf.Session()
     sess.run(tf.global_variables_initializer())
 
@@ -147,13 +149,13 @@ for count, rate in enumerate(learning_rate):
         if ((train_step + 1) * mini_batch_size) % num_data == 0:
             # Get loss and error
             [train_loss[cur_epoch], train_err[cur_epoch]] = sess.run(fetches=[ce_loss, error], 
-                                                                feed_dict={X: cur_data, Y: cur_target})
+                                                                feed_dict={X: cur_data, Y: cur_target, H: units})
 
             [valid_loss[cur_epoch], valid_err[cur_epoch]] = sess.run(fetches=[ce_loss, error], 
-                                                                feed_dict={X: validData, Y: validTarget})
+                                                                feed_dict={X: validData, Y: validTarget, H: units})
 
             [test_loss[cur_epoch], test_err[cur_epoch]] = sess.run(fetches=[ce_loss, error], 
-                                                                feed_dict={X: testData, Y: testTarget})
+                                                                feed_dict={X: testData, Y: testTarget, H: units})
 
             print("---------- {} EPOCH(S) FINISHED AT {} = {} - Results ----------".format(cur_epoch + 1, 'LR', rate))
             print("Train loss:", train_loss[cur_epoch], "Valid loss:", valid_loss[cur_epoch], "Test loss:", test_loss[cur_epoch])
@@ -170,52 +172,52 @@ for count, rate in enumerate(learning_rate):
     # Choose best learning rate based using validation cross entropy loss as metric
     print("END OF RUN for learning rate: {}".format(rate))
     print("Results - final train loss: {}, final valid error: {}, current best train loss: {}".format(train_loss[-1], valid_err[-1], best_train_loss[-1]))
-    plt.plot(x_axis, train_loss, '-', label=(r'$\eta =$') + str(rate))
+    plt.plot(x_axis, valid_err, '-', label=str(rate) + 'hidden units')
 
-    if count == 1:
-        print("Get best training run: {}".format(count))
-        best_rate = count
-        best_valid_loss = copy.deepcopy(valid_loss)
-        best_valid_err = copy.deepcopy(valid_err)
-        best_train_loss = copy.deepcopy(train_loss)
-        best_train_err = copy.deepcopy(train_err)
-        best_test_loss = copy.deepcopy(test_loss)
-        best_test_err = copy.deepcopy(test_err)
+    # if count == 1:
+    #     print("Get best training run: {}".format(count))
+    #     best_rate = count
+    #     best_valid_loss = copy.deepcopy(valid_loss)
+    #     best_valid_err = copy.deepcopy(valid_err)
+    #     best_train_loss = copy.deepcopy(train_loss)
+    #     best_train_err = copy.deepcopy(train_err)
+    #     best_test_loss = copy.deepcopy(test_loss)
+    #     best_test_err = copy.deepcopy(test_err)
 
 plt.legend(loc="best")
-fig_LR.savefig("1_1_2_LR.png")
+fig_LR.savefig("1_2_1_hidden_units.png")
 plt.show()
 
 fig_error = plt.figure(2)
-plt.title = "Classfication Error vs. Epoch"
+plt.title = "Test Classfication Error vs. Epoch"
 plt.ylabel('Error')
 plt.xlabel('Epoch')
 plt.grid(True)
 # plt.yticks([y for y in range(100) if y % 5 == 0])
 
-plt.plot(x_axis, best_train_err, '-', label=('Training'))
-plt.plot(x_axis, best_valid_err, '-', label=('Validation'))
+# plt.plot(x_axis, best_train_err, '-', label=('Training'))
+# plt.plot(x_axis, best_valid_err, '-', label=('Validation'))
 plt.plot(x_axis, best_test_err, '-', label=('Test'))
 
 plt.legend(loc="best")
-fig_error.savefig("1_1_2_error.png")
+fig_error.savefig("1_2_1_error.png")
 plt.show()
 
-fig_loss = plt.figure(3)
-plt.title = "Cross Entropy Loss vs. Epoch"
-plt.ylabel('Cross Entropy Loss')
-plt.xlabel('Epoch')
-plt.grid(True)
-# fig_loss.yticks([y for y in range(100) if y % 5 == 0])
+# fig_loss = plt.figure(3)
+# plt.title = "Cross Entropy Loss vs. Epoch"
+# plt.ylabel('Cross Entropy Loss')
+# plt.xlabel('Epoch')
+# plt.grid(True)
+# # fig_loss.yticks([y for y in range(100) if y % 5 == 0])
 
-plt.plot(x_axis, best_train_loss, '-', label=('Training'))
-plt.plot(x_axis, best_valid_loss, '-', label=('Validation'))
-plt.plot(x_axis, best_test_loss, '-', label=('Test'))
+# plt.plot(x_axis, best_train_loss, '-', label=('Training'))
+# plt.plot(x_axis, best_valid_loss, '-', label=('Validation'))
+# plt.plot(x_axis, best_test_loss, '-', label=('Test'))
 
-plt.legend(loc="best")
-fig_loss.savefig("1_1_2_loss.png")
-plt.show()
+# plt.legend(loc="best")
+# fig_loss.savefig("1_1_2_loss.png")
+# plt.show()
 
-print("Best Learning Rate = ", learning_rate[best_rate])
-print("Best Classification Error (train/valid/test) = ", train_err[-1],
-      valid_err[-1], test_err[-1])
+# print("Best Learning Rate = ", learning_rate[best_rate])
+# print("Best Classification Error (train/valid/test) = ", train_err[-1],
+#       valid_err[-1], test_err[-1])
