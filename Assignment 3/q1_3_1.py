@@ -21,30 +21,23 @@ testData = np.reshape(testData, (testData.shape[0], -1))
 trainTarget = np.reshape(trainTarget, (-1, 1))
 validTarget = np.reshape(validTarget, (-1, 1))
 testTarget = np.reshape(testTarget, (-1, 1))
+num_categories = 10
 
-# Learning parameters
-num_train_steps = 15000
+# set up hyper parameters 
+num_train_steps = 3000
 mini_batch_size = 500
 weight_decay = 3e-4
 num_data = trainData.shape[0]
 num_epoch = int(math.ceil((num_train_steps * mini_batch_size)/num_data))
 num_batches = num_data // mini_batch_size
+num_hidden_units = 1000
 learning_rate = 0.001
-
-# Network parameters
-num_hidden_units = 500
-num_categories = 10
-
-# Set up place holders for the tf graph
-X = tf.placeholder(tf.float64, shape=[None, trainData.shape[1]], name="Data")
-Y = tf.placeholder(tf.float64, shape=[None, 1], name="Label")
 
 # build a layer in NN
 def build_layer(input_layer, num_hidden_units):
     
     # initialize the weight matrix and bias vector
     num_inputs = input_layer.get_shape().as_list()[-1]
-    print("num hidden units:", num_hidden_units)
     W = tf.get_variable(name="Weights", shape=(num_inputs, num_hidden_units), dtype=tf.float64, initializer=tf.contrib.layers.xavier_initializer())
     b = tf.Variable(tf.zeros(shape=(1, num_hidden_units), dtype=tf.float64, name="Bias"))
 
@@ -53,25 +46,26 @@ def build_layer(input_layer, num_hidden_units):
 
     return z
 
+
 # Cross Entropy Loss calculation function
 def calculate_ce_loss (truth, prediction, coeff):
 
-    regularizer1 = (coeff / 2) * tf.reduce_sum(tf.square(tf.get_default_graph().get_tensor_by_name("hidden_layer1/Weights:0")))
-    regularizer2 = (coeff / 2) * tf.reduce_sum(tf.square(tf.get_default_graph().get_tensor_by_name("hidden_layer2/Weights:0")))
-    regularizer3 = (coeff / 2) * tf.reduce_sum(tf.square(tf.get_default_graph().get_tensor_by_name("softmax_layer/Weights:0")))
+    regularizer1 = (coeff / 2) * tf.reduce_sum(tf.square(tf.get_default_graph().get_tensor_by_name("hidden_layer/Weights:0")))
+    regularizer2 = (coeff / 2) * tf.reduce_sum(tf.square(tf.get_default_graph().get_tensor_by_name("softmax_layer/Weights:0")))
     ce_loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(labels=truth, logits=prediction))
-    total_loss = ce_loss + regularizer1 + regularizer2 + regularizer3
+    total_loss = ce_loss + regularizer1 + regularizer2
     return total_loss
 
-# Build the network using ReLU activation; 3 layers => two W matrices
-with tf.variable_scope("hidden_layer1"):
-    hidden_layer1 = tf.nn.relu(build_layer(X, num_hidden_units))
+# Set up place holders for the tf graph
+X = tf.placeholder(tf.float64, shape=[None, trainData.shape[1]], name="Data")
+Y = tf.placeholder(tf.float64, shape=[None, 1], name="Label")
 
-with tf.variable_scope("hidden_layer2"):
-    hidden_layer2 = tf.nn.relu(build_layer(hidden_layer1, num_hidden_units))
+# Build the network using ReLU activation; 3 layers => two W matrices
+with tf.variable_scope("hidden_layer"):
+    hidden_layer = tf.nn.relu(build_layer(X, num_hidden_units))
 
 with tf.variable_scope("softmax_layer"):    
-    softmax_layer = tf.nn.relu(build_layer(hidden_layer2, num_categories))
+    softmax_layer = tf.nn.relu(build_layer(hidden_layer, num_categories))
 
 # Classification
 y_hat = tf.nn.softmax(softmax_layer)
@@ -92,16 +86,16 @@ test_err = np.zeros(num_epoch)
 
 # Graph x axis space
 x_axis = [x+1 for x in range(num_epoch)]
-fig_LR = plt.figure()
-plt.title = "Error vs. Epoch"
-plt.ylabel('Error')
+fig_loss = plt.figure(1)
+plt.title = "Training Loss vs. Epoch"
+plt.ylabel('Cross Entropy Loss')
 plt.xlabel('Epoch')
 plt.grid(True)
 
 # File setup
-f = open("test_1_2_2_error.txt", "w+")
-
+f = open("1_3_1_stats.txt", "w+")
 # Train
+
 # Start session, (re)init variables and optimizer
 optimizer = tf.train.AdamOptimizer(learning_rate=learning_rate).minimize(ce_loss)
 sess = tf.Session()
@@ -116,11 +110,11 @@ for train_step in range(num_train_steps):
     optimizer_value = sess.run(optimizer, feed_dict={X: cur_data, Y: cur_target})
 
     # Every epoch, store the loss and error data
+    # if (train_step * mini_batch_size) % num_data == 0:            
 
     cur_epoch = (((train_step + 1) * mini_batch_size) / num_data) - 1
 
     if ((train_step + 1) * mini_batch_size) % num_data == 0:
-        
         # Get loss and error
         [train_loss[cur_epoch], train_err[cur_epoch]] = sess.run(fetches=[ce_loss, error], 
                                                             feed_dict={X: cur_data, Y: cur_target})
@@ -131,39 +125,39 @@ for train_step in range(num_train_steps):
         [test_loss[cur_epoch], test_err[cur_epoch]] = sess.run(fetches=[ce_loss, error], 
                                                             feed_dict={X: testData, Y: testTarget})
 
-        print("---------- {} EPOCH(S) FINISHED AT {} = {} - Results ----------".format(cur_epoch + 1, 'H', num_hidden_units))
+        print("---------- {} EPOCH(S) FINISHED AT {} = {} - Results ----------".format(cur_epoch + 1, 'LR', learning_rate))
         print("Train loss:", train_loss[cur_epoch], "Valid loss:", valid_loss[cur_epoch], "Test loss:", test_loss[cur_epoch])
         print("Train error:",  train_err[cur_epoch], "Valid error:", valid_err[cur_epoch], "Test error:", test_err[cur_epoch])
         # print("Optimizer value: {}".format(optimizer_value))
         print("---------- END ----------")
 
-        f.write("---------- %d EPOCH(S) FINISHED AT %s = %f - Results ----------\n" % (cur_epoch + 1, 'H', num_hidden_units))
+        f.write("---------- %d EPOCH(S) FINISHED AT %s = %f - Results ----------\n" % (cur_epoch + 1, 'LR', learning_rate))
         f.write("Train loss: %f, Valid loss: %f, Test loss: %f\n" % (train_loss[cur_epoch], valid_loss[cur_epoch],test_loss[cur_epoch]))
         f.write("Train error: %f, Valid error: %f, Test error: %f\n" % (train_err[cur_epoch], valid_err[cur_epoch],test_err[cur_epoch]))
         # f.write("Optimizer value: {}".format(optimizer_value))
         f.write("---------- END ----------\r\n")
 
 # Choose best learning rate based using validation cross entropy loss as metric
-print("END OF RUN for H: {}".format(num_hidden_units))
 print("Results - final train loss: {}, final valid error: {}".format(train_loss[-1], valid_err[-1]))
-plt.plot(x_axis, train_err, '-', label='Train Error')
-plt.plot(x_axis, valid_err, '-', label='Validation Error')
-plt.plot(x_axis, test_err, '-', label='Test Error')
-
-plt.legend(loc="best")
-fig_LR.savefig("test_1_2_2_error.png")
-plt.show()
-
-fig_loss = plt.figure()
-plt.title = "Loss vs. Epoch"
-plt.ylabel('Loss')
-plt.xlabel('Epoch')
-plt.grid(True)
 
 plt.plot(x_axis, train_loss, '-', label='Training Loss')
 plt.plot(x_axis, valid_loss, '-', label='Validation Loss')
 plt.plot(x_axis, test_loss, '-', label='Test Loss')
 
 plt.legend(loc="best")
-fig_loss.savefig("test_1_2_2_loss.png")
+fig_loss.savefig("1_3_1_loss.png")
+plt.show()
+
+fig_error = plt.figure(2)
+plt.title = "Classfication Error vs. Epoch"
+plt.ylabel('Error')
+plt.xlabel('Epoch')
+plt.grid(True)
+
+plt.plot(x_axis, train_err, '-', label=('Training'))
+plt.plot(x_axis, valid_err, '-', label=('Validation'))
+plt.plot(x_axis, test_err, '-', label=('Test'))
+
+plt.legend(loc="best")
+fig_error.savefig("1_1_2_error.png")
 plt.show()

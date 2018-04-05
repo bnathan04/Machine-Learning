@@ -1,0 +1,228 @@
+---------- 1 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.619932, Valid loss: 0.595878, Test loss: 0.587696
+Train error: 0.144000, Valid error: 0.125000, Test error: 0.130323
+---------- END ----------
+---------- 2 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.517256, Valid loss: 0.476645, Test loss: 0.504669
+Train error: 0.110000, Valid error: 0.098000, Test error: 0.102790
+---------- END ----------
+---------- 3 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.464214, Valid loss: 0.434396, Test loss: 0.473080
+Train error: 0.094000, Valid error: 0.086000, Test error: 0.095448
+---------- END ----------
+---------- 4 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.430776, Valid loss: 0.413311, Test loss: 0.455062
+Train error: 0.080000, Valid error: 0.080000, Test error: 0.090308
+---------- END ----------
+---------- 5 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.408919, Valid loss: 0.401696, Test loss: 0.443878
+Train error: 0.072000, Valid error: 0.074000, Test error: 0.092144
+---------- END ----------
+---------- 6 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.388583, Valid loss: 0.391229, Test loss: 0.434701
+Train error: 0.064000, Valid error: 0.078000, Test error: 0.088106
+---------- END ----------
+---------- 7 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.365625, Valid loss: 0.382033, Test loss: 0.427226
+Train error: 0.058000, Valid error: 0.074000, Test error: 0.088840
+---------- END ----------
+---------- 8 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.347859, Valid loss: 0.374108, Test loss: 0.418438
+Train error: 0.054000, Valid error: 0.071000, Test error: 0.086270
+---------- END ----------
+---------- 9 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.329931, Valid loss: 0.366610, Test loss: 0.412815
+Train error: 0.052000, Valid error: 0.073000, Test error: 0.083700
+---------- END ----------
+---------- 10 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.315960, Valid loss: 0.361429, Test loss: 0.408604
+Train error: 0.048000, Valid error: 0.071000, Test error: 0.081865
+---------- END ----------
+---------- 11 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.303063, Valid loss: 0.354509, Test loss: 0.404329
+Train error: 0.046000, Valid error: 0.066000, Test error: 0.081865
+---------- END ----------
+---------- 12 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.293995, Valid loss: 0.349115, Test loss: 0.400339
+Train error: 0.042000, Valid error: 0.067000, Test error: 0.081131
+---------- END ----------
+---------- 13 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.285263, Valid loss: 0.348317, Test loss: 0.396070
+Train error: 0.042000, Valid error: 0.067000, Test error: 0.080029
+---------- END ----------
+---------- 14 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.277752, Valid loss: 0.350838, Test loss: 0.395235
+Train error: 0.042000, Valid error: 0.068000, Test error: 0.080396
+---------- END ----------
+---------- 15 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.274631, Valid loss: 0.353159, Test loss: 0.396026
+Train error: 0.042000, Valid error: 0.072000, Test error: 0.082232
+---------- END ----------
+---------- 16 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.266308, Valid loss: 0.351359, Test loss: 0.395497
+Train error: 0.044000, Valid error: 0.071000, Test error: 0.078561
+---------- END ----------
+---------- 17 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.257066, Valid loss: 0.352198, Test loss: 0.392580
+Train error: 0.042000, Valid error: 0.069000, Test error: 0.080396
+---------- END ----------
+---------- 18 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.244211, Valid loss: 0.344764, Test loss: 0.392174
+Train error: 0.038000, Valid error: 0.066000, Test error: 0.083333
+---------- END ----------
+---------- 19 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.242318, Valid loss: 0.349736, Test loss: 0.407936
+Train error: 0.036000, Valid error: 0.072000, Test error: 0.082966
+---------- END ----------
+---------- 20 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.237295, Valid loss: 0.345629, Test loss: 0.417533
+Train error: 0.034000, Valid error: 0.075000, Test error: 0.083333
+---------- END ----------
+---------- 21 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.219523, Valid loss: 0.336490, Test loss: 0.404782
+Train error: 0.032000, Valid error: 0.075000, Test error: 0.083700
+---------- END ----------
+---------- 22 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.213529, Valid loss: 0.335456, Test loss: 0.398473
+Train error: 0.032000, Valid error: 0.074000, Test error: 0.080396
+---------- END ----------
+---------- 23 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.212713, Valid loss: 0.345744, Test loss: 0.399738
+Train error: 0.032000, Valid error: 0.071000, Test error: 0.081865
+---------- END ----------
+---------- 24 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.213462, Valid loss: 0.348189, Test loss: 0.406042
+Train error: 0.034000, Valid error: 0.074000, Test error: 0.082599
+---------- END ----------
+---------- 25 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.210162, Valid loss: 0.338200, Test loss: 0.406908
+Train error: 0.034000, Valid error: 0.071000, Test error: 0.082232
+---------- END ----------
+---------- 26 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.204828, Valid loss: 0.346277, Test loss: 0.408472
+Train error: 0.032000, Valid error: 0.073000, Test error: 0.081865
+---------- END ----------
+---------- 27 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.194487, Valid loss: 0.335950, Test loss: 0.399006
+Train error: 0.030000, Valid error: 0.070000, Test error: 0.080764
+---------- END ----------
+---------- 28 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.190892, Valid loss: 0.343544, Test loss: 0.399178
+Train error: 0.030000, Valid error: 0.069000, Test error: 0.083700
+---------- END ----------
+---------- 29 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.186468, Valid loss: 0.352427, Test loss: 0.400868
+Train error: 0.030000, Valid error: 0.071000, Test error: 0.082599
+---------- END ----------
+---------- 30 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.186002, Valid loss: 0.365218, Test loss: 0.397143
+Train error: 0.028000, Valid error: 0.078000, Test error: 0.080764
+---------- END ----------
+---------- 31 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.188028, Valid loss: 0.368254, Test loss: 0.391055
+Train error: 0.028000, Valid error: 0.073000, Test error: 0.078928
+---------- END ----------
+---------- 32 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.179692, Valid loss: 0.351154, Test loss: 0.390522
+Train error: 0.028000, Valid error: 0.070000, Test error: 0.077460
+---------- END ----------
+---------- 33 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.179863, Valid loss: 0.347529, Test loss: 0.400793
+Train error: 0.030000, Valid error: 0.071000, Test error: 0.080764
+---------- END ----------
+---------- 34 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.173331, Valid loss: 0.344022, Test loss: 0.396878
+Train error: 0.028000, Valid error: 0.071000, Test error: 0.081131
+---------- END ----------
+---------- 35 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.172112, Valid loss: 0.353622, Test loss: 0.394521
+Train error: 0.028000, Valid error: 0.075000, Test error: 0.081865
+---------- END ----------
+---------- 36 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.169018, Valid loss: 0.366153, Test loss: 0.395769
+Train error: 0.028000, Valid error: 0.079000, Test error: 0.079295
+---------- END ----------
+---------- 37 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.165506, Valid loss: 0.363220, Test loss: 0.401136
+Train error: 0.028000, Valid error: 0.079000, Test error: 0.079662
+---------- END ----------
+---------- 38 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.164638, Valid loss: 0.356530, Test loss: 0.402747
+Train error: 0.028000, Valid error: 0.076000, Test error: 0.077827
+---------- END ----------
+---------- 39 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.163830, Valid loss: 0.347658, Test loss: 0.395923
+Train error: 0.028000, Valid error: 0.072000, Test error: 0.081131
+---------- END ----------
+---------- 40 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.162193, Valid loss: 0.335453, Test loss: 0.383023
+Train error: 0.028000, Valid error: 0.068000, Test error: 0.083700
+---------- END ----------
+---------- 41 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.167409, Valid loss: 0.330659, Test loss: 0.385412
+Train error: 0.028000, Valid error: 0.069000, Test error: 0.081865
+---------- END ----------
+---------- 42 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.171598, Valid loss: 0.350722, Test loss: 0.401594
+Train error: 0.028000, Valid error: 0.074000, Test error: 0.088840
+---------- END ----------
+---------- 43 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.168588, Valid loss: 0.342168, Test loss: 0.399350
+Train error: 0.026000, Valid error: 0.071000, Test error: 0.084802
+---------- END ----------
+---------- 44 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.169343, Valid loss: 0.342392, Test loss: 0.386951
+Train error: 0.024000, Valid error: 0.075000, Test error: 0.080029
+---------- END ----------
+---------- 45 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.166184, Valid loss: 0.339409, Test loss: 0.378785
+Train error: 0.024000, Valid error: 0.067000, Test error: 0.077460
+---------- END ----------
+---------- 46 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.168770, Valid loss: 0.333857, Test loss: 0.375267
+Train error: 0.024000, Valid error: 0.070000, Test error: 0.081131
+---------- END ----------
+---------- 47 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.155708, Valid loss: 0.337958, Test loss: 0.386016
+Train error: 0.024000, Valid error: 0.070000, Test error: 0.078928
+---------- END ----------
+---------- 48 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.153368, Valid loss: 0.350320, Test loss: 0.382453
+Train error: 0.024000, Valid error: 0.071000, Test error: 0.077460
+---------- END ----------
+---------- 49 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.150447, Valid loss: 0.361276, Test loss: 0.387227
+Train error: 0.026000, Valid error: 0.075000, Test error: 0.077460
+---------- END ----------
+---------- 50 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.148207, Valid loss: 0.359327, Test loss: 0.382858
+Train error: 0.024000, Valid error: 0.073000, Test error: 0.077093
+---------- END ----------
+---------- 51 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.144464, Valid loss: 0.337340, Test loss: 0.368511
+Train error: 0.024000, Valid error: 0.065000, Test error: 0.075624
+---------- END ----------
+---------- 52 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.146024, Valid loss: 0.331610, Test loss: 0.358962
+Train error: 0.024000, Valid error: 0.062000, Test error: 0.075991
+---------- END ----------
+---------- 53 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.143355, Valid loss: 0.326640, Test loss: 0.365864
+Train error: 0.024000, Valid error: 0.063000, Test error: 0.075257
+---------- END ----------
+---------- 54 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.143989, Valid loss: 0.325448, Test loss: 0.370820
+Train error: 0.024000, Valid error: 0.065000, Test error: 0.077460
+---------- END ----------
+---------- 55 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.143129, Valid loss: 0.332149, Test loss: 0.383865
+Train error: 0.018000, Valid error: 0.068000, Test error: 0.077827
+---------- END ----------
+---------- 56 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.135269, Valid loss: 0.329424, Test loss: 0.380405
+Train error: 0.018000, Valid error: 0.070000, Test error: 0.077827
+---------- END ----------
+---------- 57 EPOCH(S) FINISHED AT LR = 0.001000 - Results ----------
+Train loss: 0.125634, Valid loss: 0.319466, Test loss: 0.356787
+Train error: 0.016000, Valid error: 0.061000, Test error: 0.075624
+---------- END ----------
