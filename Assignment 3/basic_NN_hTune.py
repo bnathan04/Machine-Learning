@@ -47,10 +47,10 @@ def buildGraph(num_hidden_units):
     weight_decay = 3e-4
 
     # Build network
-    with tf.variable_scope("hidden_layer"):
+    with tf.variable_scope("hidden_layer", reuse=True):
         hidden_layer = tf.nn.relu(build_layer(X_flatten, num_hidden_units))
 
-    with tf.variable_scope("softmax_layer"):    
+    with tf.variable_scope("softmax_layer", reuse=True):    
         softmax_layer = tf.nn.relu(build_layer(hidden_layer, num_categories))
 
     # Calculate loss and error
