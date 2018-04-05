@@ -28,8 +28,8 @@ def build_layer(input_layer, num_hidden_units):
     
     # initialize the weight matrix and bias vector
     num_inputs = input_layer.get_shape().as_list()[-1]
-    W = tf.get_variable(name="Weights", shape=(num_inputs, num_hidden_units), dtype=tf.float64, initializer=tf.contrib.layers.xavier_initializer())
-    b = tf.Variable(tf.zeros(shape=(1, num_hidden_units), dtype=tf.float64, name="Bias"))
+    W = tf.get_variable(name="Weights", shape=(num_inputs, num_hidden_units), dtype=tf.float32, initializer=tf.contrib.layers.xavier_initializer())
+    b = tf.Variable(tf.zeros(shape=(1, num_hidden_units), dtype=tf.float32, name="Bias"))
 
     # input to next layer
     z = tf.add(tf.matmul(input_layer,W), b)
@@ -112,7 +112,7 @@ for count, rate in enumerate(learning_rate):
         cur_batch_idx = (train_step % num_batches) * mini_batch_size
         cur_data = trainData[cur_batch_idx:cur_batch_idx + mini_batch_size]
         cur_target = trainTarget[cur_batch_idx:cur_batch_idx + mini_batch_size]
-        optimizer_value = sess.run(optimizer, feed_dict={X: cur_data, Y: cur_target})
+        optimizer_value = sess.run(train, feed_dict={X: cur_data, Y: cur_target})
 
         # Every epoch, store the loss and error data
         # if (train_step * mini_batch_size) % num_data == 0:            
