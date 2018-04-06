@@ -94,14 +94,14 @@ for train_step in range(num_train_steps):
     cur_batch_idx = (train_step % num_batches) * mini_batch_size
     cur_data = trainData[cur_batch_idx:cur_batch_idx + mini_batch_size]
     cur_target = trainTarget[cur_batch_idx:cur_batch_idx + mini_batch_size]
-    optimizer_value = sess.run(train, feed_dict={X: cur_data, Y: cur_target})
+    optimizer_value = sess.run(train, feed_dict={X: cur_data, Y: cur_target, P: 0.5})
 
     # Every epoch, store the loss and error data
     cur_epoch = (((train_step + 1) * mini_batch_size) / num_data) - 1
     if ((train_step + 1) * mini_batch_size) % num_data == 0:
         # Get loss and error
         [train_loss[cur_epoch], train_err[cur_epoch]] = sess.run(fetches=[ce_loss, error], 
-                                                            feed_dict={X: cur_data, Y: cur_target, P: 0.5})
+                                                            feed_dict={X: cur_data, Y: cur_target, P: 1.0})
 
         [valid_loss[cur_epoch], valid_err[cur_epoch]] = sess.run(fetches=[ce_loss, error], 
                                                             feed_dict={X: validData, Y: validTarget, P: 1.0})
