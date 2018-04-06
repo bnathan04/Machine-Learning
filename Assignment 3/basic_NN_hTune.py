@@ -39,12 +39,12 @@ def buildGraph(num_hidden_units):
 
     # Set up
     num_categories = 10
-    learning_rate = 0.001
+    learning_rate = 0.0001
     X = tf.placeholder(tf.float32, [None, 28, 28], name='data')
     X_flatten = tf.reshape(X, [-1, 28*28])
     Y = tf.placeholder(tf.float32, name='label')
     Y_onehot = tf.one_hot(tf.to_int64(Y), num_categories, 1.0, 0.0, axis = -1)
-    weight_decay = 3e-4
+    weight_decay = 0.005 
 
     # Build network
     with tf.variable_scope("hidden_layer"):
@@ -187,7 +187,7 @@ print("Results - final valid loss: {}, final valid error: {}".format(valid_loss[
 
 # np.save("H_100_test_err", test_err)
 # np.save("H_500_test_err", test_err)
-# np.save("H_1000_test_err", test_err)
+np.save("H_1000_test_err", test_err)
 np.save("H_1000_test_loss", test_loss)
 
 # H_100_valid = np.load("H_100_valid.npy")
