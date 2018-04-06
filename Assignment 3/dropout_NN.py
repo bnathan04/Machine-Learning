@@ -20,7 +20,6 @@ mini_batch_size = 500
 num_data = trainData.shape[0]
 num_epoch = int(math.ceil((num_train_steps * mini_batch_size)/num_data))
 num_batches = num_data // mini_batch_size
-num_hidden_units = [100, 500, 1000]
 
 # build a layer in NN
 def build_layer(input_layer, num_hidden_units):
@@ -35,20 +34,22 @@ def build_layer(input_layer, num_hidden_units):
 
     return z
 
-def buildGraph(num_hidden_units):
+def buildGraph():
 
     # Set up
+    num_hidden_units = 1000
     num_categories = 10
     learning_rate = 0.001
     X = tf.placeholder(tf.float32, [None, 28, 28], name='data')
     X_flatten = tf.reshape(X, [-1, 28*28])
     Y = tf.placeholder(tf.float32, name='label')
     Y_onehot = tf.one_hot(tf.to_int64(Y), num_categories, 1.0, 0.0, axis = -1)
+    P = tf.placeholder(tf.float32)
     weight_decay = 3e-4
 
     # Build network
     with tf.variable_scope("hidden_layer"):
-        hidden_layer = tf.nn.relu(build_layer(X_flatten, num_hidden_units))
+        hidden_layer = tf.nn.dropout(tf.nn.relu(build_layer(X_flatten, num_hidden_units)), P)
 
     with tf.variable_scope("softmax_layer"):    
         softmax_layer = tf.nn.relu(build_layer(hidden_layer, num_categories))
@@ -69,7 +70,7 @@ def buildGraph(num_hidden_units):
     optimizer = tf.train.AdamOptimizer(learning_rate=learning_rate)
     train = optimizer.minimize(loss=total_loss)    
 
-    return X, Y, cross_entropy_loss, total_loss, class_error, train
+    return X, Y, P, cross_entropy_loss, class_error, train
 
 # Empty arrays to record loss and error data
 train_loss = np.zeros(num_epoch)
@@ -79,31 +80,11 @@ train_err = np.zeros(num_epoch)
 valid_err = np.zeros(num_epoch)
 test_err = np.zeros(num_epoch)
 
-best_train_err = []
-best_train_loss = np.full((num_epoch), 99)
-best_valid_err = []
-best_valid_loss = []
-best_test_err = []
-best_test_loss = []
-best_rate = 0
-
-# Graph x axis space
-x_axis = [x+1 for x in range(num_epoch)]
-fig_valid_loss = plt.figure(1)
-plt.title = 'Validation Loss vs. Epoch'
-plt.ylabel('Cross Entropy Loss')
-plt.xlabel('Epoch')
-plt.grid(True)
-
-
 # File setup
-# f = open("H_100_stats.txt", "w+")
-# f = open("H_500_stats.txt", "w+")
-# f = open("H_1000_stats.txt", "w+")
+f = open("dropout_stats.txt", "w+")
 
 # Train
-units = 1000 
-X, Y, ce_loss, total_loss, error, train = buildGraph(units)
+X, Y, P, ce_loss, error, train = buildGraph()
 sess = tf.Session()
 sess.run(tf.global_variables_initializer())
 
@@ -120,110 +101,62 @@ for train_step in range(num_train_steps):
     if ((train_step + 1) * mini_batch_size) % num_data == 0:
         # Get loss and error
         [train_loss[cur_epoch], train_err[cur_epoch]] = sess.run(fetches=[ce_loss, error], 
-                                                            feed_dict={X: cur_data, Y: cur_target})
+                                                            feed_dict={X: cur_data, Y: cur_target, P: 0.5})
 
         [valid_loss[cur_epoch], valid_err[cur_epoch]] = sess.run(fetches=[ce_loss, error], 
-                                                            feed_dict={X: validData, Y: validTarget})
+                                                            feed_dict={X: validData, Y: validTarget, P: 1.0})
 
         [test_loss[cur_epoch], test_err[cur_epoch]] = sess.run(fetches=[ce_loss, error], 
-                                                            feed_dict={X: testData, Y: testTarget})
+                                                            feed_dict={X: testData, Y: testTarget, P: 1.0})
 
-        print("---------- {} EPOCH(S) FINISHED AT {} = {} - Results ----------".format(cur_epoch + 1, 'H', units))
+        print("---------- {} EPOCH(S) FINISHED - Results ----------".format(cur_epoch + 1))
         print("Train loss:", train_loss[cur_epoch], "Valid loss:", valid_loss[cur_epoch], "Test loss:", test_loss[cur_epoch])
         print("Train error:",  train_err[cur_epoch], "Valid error:", valid_err[cur_epoch], "Test error:", test_err[cur_epoch])
         print("---------- END ----------")
 
-        # f.write("---------- %d EPOCH(S) FINISHED AT %s = %f - Results ----------\n" % (cur_epoch + 1, 'H', units))
-        # f.write("Train loss: %f, Valid loss: %f, Test loss: %f\n" % (train_loss[cur_epoch], valid_loss[cur_epoch],test_loss[cur_epoch]))
-        # f.write("Train error: %f, Valid error: %f, Test error: %f\n" % (train_err[cur_epoch], valid_err[cur_epoch],test_err[cur_epoch]))
-        # f.write("---------- END ----------\r\n")
+        f.write("---------- %d EPOCH(S) FINISHED - Results ----------\n" % (cur_epoch + 1))
+        f.write("Train loss: %f, Valid loss: %f, Test loss: %f\n" % (train_loss[cur_epoch], valid_loss[cur_epoch],test_loss[cur_epoch]))
+        f.write("Train error: %f, Valid error: %f, Test error: %f\n" % (train_err[cur_epoch], valid_err[cur_epoch],test_err[cur_epoch]))
+        f.write("---------- END ----------\r\n")
 
 # Choose best learning rate based using validation cross entropy loss as metric
-print("END OF RUN for H = {} units".format(units))
+print("END OF RUN")
 print("Results - final valid loss: {}, final valid error: {}".format(valid_loss[-1], valid_err[-1]))
-# plt.plot(x_axis, valid_loss, '-', str(units) + ' hidden units' )
 
-# plt.legend(loc="best")
-# fig_valid_loss.savefig("H_100_tune.png")
-# fig_valid_loss.savefig("H_500_tune.png")
-# fig_valid_loss.savefig("H_1000_tune.png")
-# plt.show()
+# Graph
+x_axis = [x+1 for x in range(num_epoch)]
+fig_loss = plt.figure(1)
+plt.title = 'Loss vs. Epoch'
+plt.ylabel('Cross Entropy Loss')
+plt.xlabel('Epoch')
+plt.grid(True)
 
-# fig_error = plt.figure(2)
-# plt.title = 'Classfication Error vs. Epoch'
-# plt.ylabel('Classification Error')
-# plt.xlabel('Epoch')
-# plt.grid(True)
-
-# plt.plot(x_axis, train_err, '-', label=('Training'))
-# plt.plot(x_axis, valid_err, '-', label=('Validation'))
-# plt.plot(x_axis, test_err, '-', label=('Test'))
-
-# plt.legend(loc="best")
-# fig_error.savefig("H_100_error.png")
-# fig_error.savefig("H_500_error.png")
-# fig_error.savefig("H_1000_error.png")
-# plt.show()
-
-# fig_loss = plt.figure(3)
-# plt.title = 'Cross Entropy Loss vs. Epoch'
-# plt.ylabel('Cross Entropy Loss')
-# plt.xlabel('Epoch')
-# plt.grid(True)
-
-# plt.plot(x_axis, train_loss, '-', label=('Training'))
-# plt.plot(x_axis, valid_loss, '-', label=('Validation'))
+train_loss_nd = np.load("H_1000_train.npy")
+valid_loss_nd = np.load("H_1000_valid.npy")
+plt.plot(x_axis, train_loss_nd, '-', label=('Training w/o Dropout'))
+plt.plot(x_axis, valid_loss_nd, '-', label=('Validation w/o Dropout'))
+plt.plot(x_axis, train_loss, '-', label=('Training with Dropout'))
+plt.plot(x_axis, valid_loss, '-', label=('Validation with Dropout'))
 # plt.plot(x_axis, test_loss, '-', label=('Test'))
 
-# plt.legend(loc="best")
-# fig_loss.savefig("H_100_loss.png")
-# fig_loss.savefig("H_500_loss.png")
-# fig_loss.savefig("H_1000_loss.png")
-# plt.show()
+plt.legend(loc="best")
+fig_loss.savefig("1_3_1_loss.png")
+plt.show()
 
-# np.save("H_100_valid", valid_loss)
-# np.save("H_500_valid", valid_loss)
-np.save("H_1000_valid", valid_loss)
-np.save("H_1000_train", train_loss)
-np.save("H_1000_valid_err", valid_err)
-np.save("H_1000_train_err", train_err)
-# np.save("H_100_test_err", test_err)
-# np.save("H_500_test_err", test_err)
-# np.save("H_1000_test_err", test_err)
-# np.save("H_1000_test_loss", test_loss)
+fig_error = plt.figure(2)
+plt.title = 'Classfication Error vs. Epoch'
+plt.ylabel('Classification Error')
+plt.xlabel('Epoch')
+plt.grid(True)
 
-# H_100_valid = np.load("H_100_valid.npy")
-# H_500_valid = np.load("H_500_valid.npy")
-# H_1000_valid = np.load("H_1000_valid.npy")
+train_err_nd = np.load("H_1000_train_err.npy")
+valid_err_nd = np.load("H_1000_valid_err.npy")
+plt.plot(x_axis, train_err_nd, '-', label=('Training w/o Dropout'))
+plt.plot(x_axis, valid_err_nd, '-', label=('Validation w/o Dropout'))
+plt.plot(x_axis, train_err, '-', label=('Training with Dropout'))
+plt.plot(x_axis, valid_err, '-', label=('Validation with Dropout'))
+# plt.plot(x_axis, test_err, '-', label=('Test'))
 
-# H_100_test_err = np.load("H_100_test_err.npy")
-# H_500_test_err = np.load("H_500_test_err.npy")
-# H_1000_test_err = np.load("H_1000_test_err.npy")
-
-# fig_loss_cmp = plt.figure()
-# plt.title = 'Validation Loss vs. Epoch'
-# plt.ylabel('Cross Entropy Loss')
-# plt.xlabel('Epoch')
-# plt.grid(True)
-
-# plt.plot(x_axis, H_100_valid, '-', label=('100 Hidden Units'))
-# plt.plot(x_axis, H_500_valid, '-', label=('500 Hidden Units'))
-# plt.plot(x_axis, H_1000_valid, '-', label=('1000 Hidden Units'))
-
-# plt.legend(loc="best")
-# fig_loss_cmp.savefig("H_valid_loss_cmp.png")
-# plt.show()
-
-# fig_err_cmp = plt.figure()
-# plt.title = 'Test Error vs. Epoch'
-# plt.ylabel('Classification Error')
-# plt.xlabel('Epoch')
-# plt.grid(True)
-
-# plt.plot(x_axis, H_100_test_err, '-', label=('100 Hidden Units'))
-# plt.plot(x_axis, H_500_test_err, '-', label=('500 Hidden Units'))
-# plt.plot(x_axis, H_1000_test_err, '-', label=('1000 Hidden Units'))
-
-# plt.legend(loc="best")
-# fig_err_cmp.savefig("H_test_err_cmp.png")
-# plt.show()
+plt.legend(loc="best")
+fig_error.savefig("1_3_1_error.png")
+plt.show()
