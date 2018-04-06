@@ -1,0 +1,2000 @@
+---------- 1 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.910825, Valid loss: 0.875788, Test loss: 0.843785
+Train error: 0.302000, Valid error: 0.302000, Test error: 0.284508
+---------- END ----------
+---------- 2 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.819281, Valid loss: 0.775216, Test loss: 0.774639
+Train error: 0.280000, Valid error: 0.284000, Test error: 0.273128
+---------- END ----------
+---------- 3 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.783859, Valid loss: 0.743870, Test loss: 0.747300
+Train error: 0.278000, Valid error: 0.276000, Test error: 0.268355
+---------- END ----------
+---------- 4 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.762535, Valid loss: 0.724219, Test loss: 0.729808
+Train error: 0.272000, Valid error: 0.269000, Test error: 0.264317
+---------- END ----------
+---------- 5 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.749539, Valid loss: 0.715476, Test loss: 0.721275
+Train error: 0.278000, Valid error: 0.270000, Test error: 0.262482
+---------- END ----------
+---------- 6 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.732284, Valid loss: 0.706794, Test loss: 0.713162
+Train error: 0.268000, Valid error: 0.270000, Test error: 0.263216
+---------- END ----------
+---------- 7 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.720571, Valid loss: 0.698863, Test loss: 0.705977
+Train error: 0.266000, Valid error: 0.269000, Test error: 0.262849
+---------- END ----------
+---------- 8 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.706822, Valid loss: 0.695575, Test loss: 0.699663
+Train error: 0.262000, Valid error: 0.272000, Test error: 0.259912
+---------- END ----------
+---------- 9 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.693387, Valid loss: 0.690006, Test loss: 0.695413
+Train error: 0.258000, Valid error: 0.267000, Test error: 0.258811
+---------- END ----------
+---------- 10 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.684156, Valid loss: 0.687225, Test loss: 0.693026
+Train error: 0.258000, Valid error: 0.264000, Test error: 0.259178
+---------- END ----------
+---------- 11 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.674438, Valid loss: 0.685084, Test loss: 0.689582
+Train error: 0.256000, Valid error: 0.265000, Test error: 0.259178
+---------- END ----------
+---------- 12 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.667925, Valid loss: 0.683646, Test loss: 0.688629
+Train error: 0.252000, Valid error: 0.263000, Test error: 0.259178
+---------- END ----------
+---------- 13 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.659159, Valid loss: 0.684576, Test loss: 0.686650
+Train error: 0.250000, Valid error: 0.266000, Test error: 0.259545
+---------- END ----------
+---------- 14 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.464921, Valid loss: 0.483868, Test loss: 0.506792
+Train error: 0.162000, Valid error: 0.165000, Test error: 0.175477
+---------- END ----------
+---------- 15 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.442094, Valid loss: 0.472111, Test loss: 0.496750
+Train error: 0.152000, Valid error: 0.162000, Test error: 0.174376
+---------- END ----------
+---------- 16 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.430158, Valid loss: 0.470646, Test loss: 0.493827
+Train error: 0.152000, Valid error: 0.162000, Test error: 0.171439
+---------- END ----------
+---------- 17 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.420518, Valid loss: 0.470609, Test loss: 0.492362
+Train error: 0.152000, Valid error: 0.160000, Test error: 0.170338
+---------- END ----------
+---------- 18 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.418107, Valid loss: 0.476387, Test loss: 0.493198
+Train error: 0.156000, Valid error: 0.169000, Test error: 0.172173
+---------- END ----------
+---------- 19 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.416256, Valid loss: 0.483359, Test loss: 0.496222
+Train error: 0.154000, Valid error: 0.166000, Test error: 0.171806
+---------- END ----------
+---------- 20 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.411925, Valid loss: 0.483111, Test loss: 0.495678
+Train error: 0.156000, Valid error: 0.168000, Test error: 0.171439
+---------- END ----------
+---------- 21 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.400638, Valid loss: 0.466843, Test loss: 0.493554
+Train error: 0.150000, Valid error: 0.165000, Test error: 0.171072
+---------- END ----------
+---------- 22 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.397697, Valid loss: 0.460624, Test loss: 0.500500
+Train error: 0.148000, Valid error: 0.165000, Test error: 0.173642
+---------- END ----------
+---------- 23 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.390944, Valid loss: 0.456733, Test loss: 0.505181
+Train error: 0.148000, Valid error: 0.163000, Test error: 0.173642
+---------- END ----------
+---------- 24 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.390075, Valid loss: 0.462801, Test loss: 0.515449
+Train error: 0.146000, Valid error: 0.166000, Test error: 0.174376
+---------- END ----------
+---------- 25 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.381401, Valid loss: 0.462719, Test loss: 0.510587
+Train error: 0.144000, Valid error: 0.166000, Test error: 0.171072
+---------- END ----------
+---------- 26 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.379116, Valid loss: 0.463449, Test loss: 0.505969
+Train error: 0.146000, Valid error: 0.170000, Test error: 0.172173
+---------- END ----------
+---------- 27 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.371611, Valid loss: 0.467801, Test loss: 0.499669
+Train error: 0.142000, Valid error: 0.166000, Test error: 0.169971
+---------- END ----------
+---------- 28 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.370373, Valid loss: 0.469475, Test loss: 0.498089
+Train error: 0.140000, Valid error: 0.162000, Test error: 0.169604
+---------- END ----------
+---------- 29 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.367941, Valid loss: 0.468426, Test loss: 0.502142
+Train error: 0.140000, Valid error: 0.165000, Test error: 0.168502
+---------- END ----------
+---------- 30 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.370040, Valid loss: 0.462078, Test loss: 0.507169
+Train error: 0.140000, Valid error: 0.169000, Test error: 0.171072
+---------- END ----------
+---------- 31 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.366593, Valid loss: 0.462268, Test loss: 0.502152
+Train error: 0.140000, Valid error: 0.167000, Test error: 0.172173
+---------- END ----------
+---------- 32 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.364913, Valid loss: 0.458465, Test loss: 0.497921
+Train error: 0.140000, Valid error: 0.162000, Test error: 0.174009
+---------- END ----------
+---------- 33 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.358112, Valid loss: 0.451689, Test loss: 0.489066
+Train error: 0.140000, Valid error: 0.163000, Test error: 0.170705
+---------- END ----------
+---------- 34 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.356127, Valid loss: 0.444995, Test loss: 0.486941
+Train error: 0.140000, Valid error: 0.162000, Test error: 0.172173
+---------- END ----------
+---------- 35 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.364034, Valid loss: 0.448718, Test loss: 0.496760
+Train error: 0.142000, Valid error: 0.159000, Test error: 0.171072
+---------- END ----------
+---------- 36 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.355484, Valid loss: 0.439789, Test loss: 0.485647
+Train error: 0.140000, Valid error: 0.157000, Test error: 0.167768
+---------- END ----------
+---------- 37 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.348318, Valid loss: 0.441380, Test loss: 0.486773
+Train error: 0.140000, Valid error: 0.159000, Test error: 0.168502
+---------- END ----------
+---------- 38 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.346259, Valid loss: 0.433696, Test loss: 0.485623
+Train error: 0.140000, Valid error: 0.157000, Test error: 0.169604
+---------- END ----------
+---------- 39 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.343368, Valid loss: 0.443948, Test loss: 0.491801
+Train error: 0.138000, Valid error: 0.157000, Test error: 0.167401
+---------- END ----------
+---------- 40 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.342017, Valid loss: 0.464900, Test loss: 0.501105
+Train error: 0.138000, Valid error: 0.164000, Test error: 0.166667
+---------- END ----------
+---------- 41 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.343181, Valid loss: 0.486118, Test loss: 0.509880
+Train error: 0.138000, Valid error: 0.161000, Test error: 0.167401
+---------- END ----------
+---------- 42 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.343240, Valid loss: 0.485423, Test loss: 0.511205
+Train error: 0.138000, Valid error: 0.161000, Test error: 0.167401
+---------- END ----------
+---------- 43 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.343131, Valid loss: 0.470351, Test loss: 0.513663
+Train error: 0.138000, Valid error: 0.157000, Test error: 0.170705
+---------- END ----------
+---------- 44 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.343121, Valid loss: 0.454340, Test loss: 0.501899
+Train error: 0.140000, Valid error: 0.157000, Test error: 0.168502
+---------- END ----------
+---------- 45 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.340786, Valid loss: 0.449268, Test loss: 0.489276
+Train error: 0.140000, Valid error: 0.157000, Test error: 0.166300
+---------- END ----------
+---------- 46 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.343330, Valid loss: 0.449537, Test loss: 0.483769
+Train error: 0.140000, Valid error: 0.156000, Test error: 0.168135
+---------- END ----------
+---------- 47 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.124292, Valid loss: 0.251527, Test loss: 0.294117
+Train error: 0.032000, Valid error: 0.072000, Test error: 0.083333
+---------- END ----------
+---------- 48 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.116880, Valid loss: 0.253243, Test loss: 0.296093
+Train error: 0.032000, Valid error: 0.070000, Test error: 0.079295
+---------- END ----------
+---------- 49 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.111789, Valid loss: 0.234301, Test loss: 0.292959
+Train error: 0.032000, Valid error: 0.064000, Test error: 0.081131
+---------- END ----------
+---------- 50 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.109847, Valid loss: 0.226959, Test loss: 0.297399
+Train error: 0.032000, Valid error: 0.067000, Test error: 0.081498
+---------- END ----------
+---------- 51 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.103057, Valid loss: 0.231341, Test loss: 0.307673
+Train error: 0.032000, Valid error: 0.068000, Test error: 0.081865
+---------- END ----------
+---------- 52 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.098608, Valid loss: 0.238911, Test loss: 0.310289
+Train error: 0.030000, Valid error: 0.070000, Test error: 0.082599
+---------- END ----------
+---------- 53 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.092501, Valid loss: 0.256568, Test loss: 0.300252
+Train error: 0.028000, Valid error: 0.073000, Test error: 0.081865
+---------- END ----------
+---------- 54 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.091649, Valid loss: 0.259235, Test loss: 0.296738
+Train error: 0.028000, Valid error: 0.072000, Test error: 0.078194
+---------- END ----------
+---------- 55 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.089391, Valid loss: 0.271123, Test loss: 0.300067
+Train error: 0.028000, Valid error: 0.067000, Test error: 0.078561
+---------- END ----------
+---------- 56 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.085842, Valid loss: 0.274246, Test loss: 0.301111
+Train error: 0.028000, Valid error: 0.069000, Test error: 0.077827
+---------- END ----------
+---------- 57 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.084382, Valid loss: 0.276598, Test loss: 0.302612
+Train error: 0.028000, Valid error: 0.072000, Test error: 0.078194
+---------- END ----------
+---------- 58 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.084312, Valid loss: 0.261885, Test loss: 0.301802
+Train error: 0.026000, Valid error: 0.071000, Test error: 0.077093
+---------- END ----------
+---------- 59 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.079427, Valid loss: 0.232740, Test loss: 0.293605
+Train error: 0.026000, Valid error: 0.058000, Test error: 0.076358
+---------- END ----------
+---------- 60 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.083212, Valid loss: 0.232580, Test loss: 0.304122
+Train error: 0.026000, Valid error: 0.062000, Test error: 0.080396
+---------- END ----------
+---------- 61 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.081533, Valid loss: 0.247110, Test loss: 0.304479
+Train error: 0.026000, Valid error: 0.063000, Test error: 0.080396
+---------- END ----------
+---------- 62 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.081125, Valid loss: 0.247276, Test loss: 0.300414
+Train error: 0.026000, Valid error: 0.062000, Test error: 0.078928
+---------- END ----------
+---------- 63 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.077780, Valid loss: 0.231806, Test loss: 0.289657
+Train error: 0.026000, Valid error: 0.059000, Test error: 0.079295
+---------- END ----------
+---------- 64 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.079708, Valid loss: 0.241837, Test loss: 0.296399
+Train error: 0.026000, Valid error: 0.064000, Test error: 0.079662
+---------- END ----------
+---------- 65 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.081162, Valid loss: 0.243470, Test loss: 0.294519
+Train error: 0.026000, Valid error: 0.066000, Test error: 0.077460
+---------- END ----------
+---------- 66 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.080135, Valid loss: 0.246032, Test loss: 0.301601
+Train error: 0.026000, Valid error: 0.062000, Test error: 0.077093
+---------- END ----------
+---------- 67 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.077555, Valid loss: 0.256869, Test loss: 0.304085
+Train error: 0.026000, Valid error: 0.067000, Test error: 0.078194
+---------- END ----------
+---------- 68 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.079093, Valid loss: 0.266475, Test loss: 0.314283
+Train error: 0.028000, Valid error: 0.066000, Test error: 0.078928
+---------- END ----------
+---------- 69 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.079109, Valid loss: 0.265818, Test loss: 0.310677
+Train error: 0.028000, Valid error: 0.065000, Test error: 0.081131
+---------- END ----------
+---------- 70 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.080154, Valid loss: 0.253682, Test loss: 0.306280
+Train error: 0.028000, Valid error: 0.065000, Test error: 0.078928
+---------- END ----------
+---------- 71 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.078494, Valid loss: 0.241465, Test loss: 0.293032
+Train error: 0.028000, Valid error: 0.066000, Test error: 0.079662
+---------- END ----------
+---------- 72 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.081715, Valid loss: 0.237915, Test loss: 0.287044
+Train error: 0.028000, Valid error: 0.058000, Test error: 0.078561
+---------- END ----------
+---------- 73 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.080449, Valid loss: 0.262150, Test loss: 0.291936
+Train error: 0.024000, Valid error: 0.069000, Test error: 0.077093
+---------- END ----------
+---------- 74 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.081084, Valid loss: 0.260147, Test loss: 0.291001
+Train error: 0.026000, Valid error: 0.068000, Test error: 0.077093
+---------- END ----------
+---------- 75 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.075428, Valid loss: 0.258610, Test loss: 0.295654
+Train error: 0.024000, Valid error: 0.062000, Test error: 0.075624
+---------- END ----------
+---------- 76 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.077050, Valid loss: 0.280502, Test loss: 0.312740
+Train error: 0.024000, Valid error: 0.073000, Test error: 0.078928
+---------- END ----------
+---------- 77 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.074528, Valid loss: 0.238230, Test loss: 0.287078
+Train error: 0.024000, Valid error: 0.064000, Test error: 0.078194
+---------- END ----------
+---------- 78 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.071739, Valid loss: 0.237012, Test loss: 0.282264
+Train error: 0.026000, Valid error: 0.065000, Test error: 0.075624
+---------- END ----------
+---------- 79 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.071741, Valid loss: 0.237604, Test loss: 0.287550
+Train error: 0.026000, Valid error: 0.065000, Test error: 0.077093
+---------- END ----------
+---------- 80 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.071672, Valid loss: 0.248038, Test loss: 0.292410
+Train error: 0.026000, Valid error: 0.069000, Test error: 0.076725
+---------- END ----------
+---------- 81 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.071511, Valid loss: 0.248499, Test loss: 0.294409
+Train error: 0.026000, Valid error: 0.069000, Test error: 0.075991
+---------- END ----------
+---------- 82 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.069689, Valid loss: 0.258607, Test loss: 0.304793
+Train error: 0.026000, Valid error: 0.069000, Test error: 0.075624
+---------- END ----------
+---------- 83 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.070247, Valid loss: 0.249365, Test loss: 0.292053
+Train error: 0.024000, Valid error: 0.060000, Test error: 0.078561
+---------- END ----------
+---------- 84 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.067555, Valid loss: 0.236581, Test loss: 0.288278
+Train error: 0.024000, Valid error: 0.061000, Test error: 0.075991
+---------- END ----------
+---------- 85 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.073403, Valid loss: 0.236065, Test loss: 0.289500
+Train error: 0.026000, Valid error: 0.064000, Test error: 0.077093
+---------- END ----------
+---------- 86 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.077065, Valid loss: 0.233129, Test loss: 0.294459
+Train error: 0.024000, Valid error: 0.064000, Test error: 0.077093
+---------- END ----------
+---------- 87 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.071980, Valid loss: 0.236982, Test loss: 0.306203
+Train error: 0.024000, Valid error: 0.066000, Test error: 0.080764
+---------- END ----------
+---------- 88 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.065822, Valid loss: 0.230324, Test loss: 0.289028
+Train error: 0.022000, Valid error: 0.061000, Test error: 0.080029
+---------- END ----------
+---------- 89 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.062617, Valid loss: 0.231150, Test loss: 0.279431
+Train error: 0.020000, Valid error: 0.063000, Test error: 0.075991
+---------- END ----------
+---------- 90 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.064683, Valid loss: 0.246724, Test loss: 0.291195
+Train error: 0.020000, Valid error: 0.066000, Test error: 0.077093
+---------- END ----------
+---------- 91 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.071640, Valid loss: 0.259934, Test loss: 0.301524
+Train error: 0.024000, Valid error: 0.071000, Test error: 0.077460
+---------- END ----------
+---------- 92 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.070130, Valid loss: 0.262524, Test loss: 0.305374
+Train error: 0.022000, Valid error: 0.067000, Test error: 0.077827
+---------- END ----------
+---------- 93 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.065570, Valid loss: 0.246010, Test loss: 0.289053
+Train error: 0.022000, Valid error: 0.063000, Test error: 0.074523
+---------- END ----------
+---------- 94 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.063602, Valid loss: 0.240333, Test loss: 0.295847
+Train error: 0.020000, Valid error: 0.060000, Test error: 0.076725
+---------- END ----------
+---------- 95 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.062077, Valid loss: 0.240312, Test loss: 0.294911
+Train error: 0.020000, Valid error: 0.062000, Test error: 0.077827
+---------- END ----------
+---------- 96 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.061350, Valid loss: 0.242549, Test loss: 0.303511
+Train error: 0.020000, Valid error: 0.062000, Test error: 0.078561
+---------- END ----------
+---------- 97 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.063405, Valid loss: 0.241245, Test loss: 0.307763
+Train error: 0.020000, Valid error: 0.069000, Test error: 0.076725
+---------- END ----------
+---------- 98 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.061123, Valid loss: 0.244314, Test loss: 0.307271
+Train error: 0.020000, Valid error: 0.066000, Test error: 0.078928
+---------- END ----------
+---------- 99 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.058302, Valid loss: 0.244363, Test loss: 0.299279
+Train error: 0.020000, Valid error: 0.067000, Test error: 0.077460
+---------- END ----------
+---------- 100 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.059557, Valid loss: 0.250572, Test loss: 0.296446
+Train error: 0.020000, Valid error: 0.063000, Test error: 0.079662
+---------- END ----------
+---------- 101 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.060663, Valid loss: 0.265728, Test loss: 0.304073
+Train error: 0.020000, Valid error: 0.066000, Test error: 0.077827
+---------- END ----------
+---------- 102 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.060418, Valid loss: 0.270564, Test loss: 0.297337
+Train error: 0.020000, Valid error: 0.067000, Test error: 0.075624
+---------- END ----------
+---------- 103 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.061565, Valid loss: 0.272817, Test loss: 0.296359
+Train error: 0.020000, Valid error: 0.064000, Test error: 0.074156
+---------- END ----------
+---------- 104 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.059909, Valid loss: 0.247220, Test loss: 0.289755
+Train error: 0.020000, Valid error: 0.062000, Test error: 0.075991
+---------- END ----------
+---------- 105 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.061101, Valid loss: 0.241407, Test loss: 0.298991
+Train error: 0.020000, Valid error: 0.064000, Test error: 0.077827
+---------- END ----------
+---------- 106 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.057815, Valid loss: 0.236423, Test loss: 0.294955
+Train error: 0.020000, Valid error: 0.063000, Test error: 0.076725
+---------- END ----------
+---------- 107 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.058776, Valid loss: 0.229703, Test loss: 0.282932
+Train error: 0.020000, Valid error: 0.062000, Test error: 0.077093
+---------- END ----------
+---------- 108 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.059178, Valid loss: 0.227299, Test loss: 0.292739
+Train error: 0.020000, Valid error: 0.062000, Test error: 0.080396
+---------- END ----------
+---------- 109 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.059383, Valid loss: 0.234293, Test loss: 0.301210
+Train error: 0.020000, Valid error: 0.061000, Test error: 0.077460
+---------- END ----------
+---------- 110 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.063742, Valid loss: 0.232097, Test loss: 0.302417
+Train error: 0.022000, Valid error: 0.066000, Test error: 0.075991
+---------- END ----------
+---------- 111 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.061338, Valid loss: 0.237457, Test loss: 0.284674
+Train error: 0.022000, Valid error: 0.064000, Test error: 0.073789
+---------- END ----------
+---------- 112 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.057028, Valid loss: 0.244109, Test loss: 0.281797
+Train error: 0.020000, Valid error: 0.064000, Test error: 0.074523
+---------- END ----------
+---------- 113 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.056775, Valid loss: 0.247687, Test loss: 0.283715
+Train error: 0.020000, Valid error: 0.060000, Test error: 0.073421
+---------- END ----------
+---------- 114 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.058720, Valid loss: 0.254673, Test loss: 0.282878
+Train error: 0.020000, Valid error: 0.065000, Test error: 0.074523
+---------- END ----------
+---------- 115 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.057297, Valid loss: 0.249773, Test loss: 0.285807
+Train error: 0.020000, Valid error: 0.066000, Test error: 0.074523
+---------- END ----------
+---------- 116 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.057394, Valid loss: 0.246797, Test loss: 0.289194
+Train error: 0.020000, Valid error: 0.060000, Test error: 0.077460
+---------- END ----------
+---------- 117 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.061554, Valid loss: 0.240701, Test loss: 0.293248
+Train error: 0.022000, Valid error: 0.061000, Test error: 0.077827
+---------- END ----------
+---------- 118 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.061505, Valid loss: 0.241868, Test loss: 0.295175
+Train error: 0.020000, Valid error: 0.059000, Test error: 0.076725
+---------- END ----------
+---------- 119 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.057631, Valid loss: 0.235133, Test loss: 0.289522
+Train error: 0.020000, Valid error: 0.062000, Test error: 0.077093
+---------- END ----------
+---------- 120 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.060197, Valid loss: 0.237154, Test loss: 0.287688
+Train error: 0.020000, Valid error: 0.062000, Test error: 0.077093
+---------- END ----------
+---------- 121 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.059453, Valid loss: 0.233912, Test loss: 0.284431
+Train error: 0.020000, Valid error: 0.061000, Test error: 0.077460
+---------- END ----------
+---------- 122 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.061009, Valid loss: 0.234505, Test loss: 0.286448
+Train error: 0.020000, Valid error: 0.065000, Test error: 0.079295
+---------- END ----------
+---------- 123 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.062841, Valid loss: 0.243376, Test loss: 0.285870
+Train error: 0.022000, Valid error: 0.062000, Test error: 0.075991
+---------- END ----------
+---------- 124 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.055092, Valid loss: 0.232831, Test loss: 0.286855
+Train error: 0.018000, Valid error: 0.057000, Test error: 0.075257
+---------- END ----------
+---------- 125 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.053796, Valid loss: 0.236335, Test loss: 0.283349
+Train error: 0.018000, Valid error: 0.065000, Test error: 0.075991
+---------- END ----------
+---------- 126 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.052497, Valid loss: 0.236451, Test loss: 0.287359
+Train error: 0.018000, Valid error: 0.062000, Test error: 0.075991
+---------- END ----------
+---------- 127 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.054735, Valid loss: 0.242729, Test loss: 0.293355
+Train error: 0.018000, Valid error: 0.066000, Test error: 0.079295
+---------- END ----------
+---------- 128 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.056008, Valid loss: 0.251991, Test loss: 0.314262
+Train error: 0.016000, Valid error: 0.065000, Test error: 0.081131
+---------- END ----------
+---------- 129 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.053784, Valid loss: 0.241050, Test loss: 0.313387
+Train error: 0.016000, Valid error: 0.061000, Test error: 0.082232
+---------- END ----------
+---------- 130 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.052354, Valid loss: 0.228791, Test loss: 0.293737
+Train error: 0.016000, Valid error: 0.061000, Test error: 0.077827
+---------- END ----------
+---------- 131 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.049983, Valid loss: 0.221963, Test loss: 0.287298
+Train error: 0.016000, Valid error: 0.057000, Test error: 0.076358
+---------- END ----------
+---------- 132 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.051354, Valid loss: 0.235749, Test loss: 0.298197
+Train error: 0.016000, Valid error: 0.064000, Test error: 0.080029
+---------- END ----------
+---------- 133 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.056831, Valid loss: 0.232035, Test loss: 0.304920
+Train error: 0.016000, Valid error: 0.062000, Test error: 0.082599
+---------- END ----------
+---------- 134 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.059843, Valid loss: 0.247135, Test loss: 0.310949
+Train error: 0.016000, Valid error: 0.063000, Test error: 0.080396
+---------- END ----------
+---------- 135 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.052979, Valid loss: 0.236230, Test loss: 0.299990
+Train error: 0.016000, Valid error: 0.064000, Test error: 0.081498
+---------- END ----------
+---------- 136 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.052608, Valid loss: 0.238180, Test loss: 0.291455
+Train error: 0.016000, Valid error: 0.061000, Test error: 0.077460
+---------- END ----------
+---------- 137 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.055661, Valid loss: 0.236573, Test loss: 0.290263
+Train error: 0.018000, Valid error: 0.064000, Test error: 0.077460
+---------- END ----------
+---------- 138 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.054732, Valid loss: 0.224404, Test loss: 0.288777
+Train error: 0.018000, Valid error: 0.060000, Test error: 0.075257
+---------- END ----------
+---------- 139 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.050618, Valid loss: 0.227264, Test loss: 0.290004
+Train error: 0.018000, Valid error: 0.059000, Test error: 0.076358
+---------- END ----------
+---------- 140 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.050461, Valid loss: 0.233641, Test loss: 0.294483
+Train error: 0.016000, Valid error: 0.064000, Test error: 0.075624
+---------- END ----------
+---------- 141 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.051357, Valid loss: 0.236293, Test loss: 0.291069
+Train error: 0.016000, Valid error: 0.062000, Test error: 0.078194
+---------- END ----------
+---------- 142 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.048122, Valid loss: 0.246888, Test loss: 0.288423
+Train error: 0.016000, Valid error: 0.065000, Test error: 0.076358
+---------- END ----------
+---------- 143 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.055548, Valid loss: 0.273812, Test loss: 0.314394
+Train error: 0.018000, Valid error: 0.069000, Test error: 0.080764
+---------- END ----------
+---------- 144 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.050887, Valid loss: 0.270615, Test loss: 0.308721
+Train error: 0.016000, Valid error: 0.069000, Test error: 0.075991
+---------- END ----------
+---------- 145 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.051379, Valid loss: 0.263097, Test loss: 0.305804
+Train error: 0.016000, Valid error: 0.067000, Test error: 0.075991
+---------- END ----------
+---------- 146 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.052413, Valid loss: 0.261260, Test loss: 0.306933
+Train error: 0.016000, Valid error: 0.068000, Test error: 0.074890
+---------- END ----------
+---------- 147 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.047545, Valid loss: 0.231122, Test loss: 0.290370
+Train error: 0.016000, Valid error: 0.062000, Test error: 0.074890
+---------- END ----------
+---------- 148 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.048292, Valid loss: 0.231838, Test loss: 0.295262
+Train error: 0.014000, Valid error: 0.063000, Test error: 0.077827
+---------- END ----------
+---------- 149 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.047063, Valid loss: 0.246393, Test loss: 0.315043
+Train error: 0.014000, Valid error: 0.071000, Test error: 0.076358
+---------- END ----------
+---------- 150 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.042284, Valid loss: 0.227653, Test loss: 0.307339
+Train error: 0.014000, Valid error: 0.071000, Test error: 0.076725
+---------- END ----------
+---------- 151 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.044686, Valid loss: 0.230996, Test loss: 0.307745
+Train error: 0.014000, Valid error: 0.067000, Test error: 0.075624
+---------- END ----------
+---------- 152 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.046399, Valid loss: 0.231970, Test loss: 0.310463
+Train error: 0.014000, Valid error: 0.069000, Test error: 0.077460
+---------- END ----------
+---------- 153 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.043302, Valid loss: 0.248450, Test loss: 0.295720
+Train error: 0.014000, Valid error: 0.069000, Test error: 0.075624
+---------- END ----------
+---------- 154 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.046342, Valid loss: 0.280005, Test loss: 0.304427
+Train error: 0.014000, Valid error: 0.071000, Test error: 0.078561
+---------- END ----------
+---------- 155 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.047694, Valid loss: 0.285956, Test loss: 0.305584
+Train error: 0.014000, Valid error: 0.073000, Test error: 0.075257
+---------- END ----------
+---------- 156 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.042398, Valid loss: 0.244250, Test loss: 0.293050
+Train error: 0.014000, Valid error: 0.067000, Test error: 0.078194
+---------- END ----------
+---------- 157 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.044504, Valid loss: 0.238772, Test loss: 0.299609
+Train error: 0.014000, Valid error: 0.064000, Test error: 0.079662
+---------- END ----------
+---------- 158 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.044828, Valid loss: 0.248055, Test loss: 0.306201
+Train error: 0.014000, Valid error: 0.065000, Test error: 0.078928
+---------- END ----------
+---------- 159 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.044122, Valid loss: 0.252012, Test loss: 0.295369
+Train error: 0.014000, Valid error: 0.068000, Test error: 0.075257
+---------- END ----------
+---------- 160 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.042175, Valid loss: 0.246458, Test loss: 0.284131
+Train error: 0.014000, Valid error: 0.066000, Test error: 0.075991
+---------- END ----------
+---------- 161 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.042683, Valid loss: 0.245097, Test loss: 0.290273
+Train error: 0.014000, Valid error: 0.066000, Test error: 0.076725
+---------- END ----------
+---------- 162 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.041847, Valid loss: 0.240846, Test loss: 0.282798
+Train error: 0.014000, Valid error: 0.061000, Test error: 0.075257
+---------- END ----------
+---------- 163 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.044339, Valid loss: 0.225855, Test loss: 0.285031
+Train error: 0.014000, Valid error: 0.058000, Test error: 0.077827
+---------- END ----------
+---------- 164 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.043245, Valid loss: 0.231022, Test loss: 0.294138
+Train error: 0.014000, Valid error: 0.062000, Test error: 0.078928
+---------- END ----------
+---------- 165 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.043460, Valid loss: 0.234212, Test loss: 0.293868
+Train error: 0.014000, Valid error: 0.063000, Test error: 0.078561
+---------- END ----------
+---------- 166 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.044705, Valid loss: 0.242609, Test loss: 0.292205
+Train error: 0.014000, Valid error: 0.061000, Test error: 0.077093
+---------- END ----------
+---------- 167 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.047201, Valid loss: 0.256582, Test loss: 0.294236
+Train error: 0.014000, Valid error: 0.063000, Test error: 0.078194
+---------- END ----------
+---------- 168 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.048348, Valid loss: 0.251961, Test loss: 0.303777
+Train error: 0.014000, Valid error: 0.067000, Test error: 0.077093
+---------- END ----------
+---------- 169 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.045214, Valid loss: 0.241458, Test loss: 0.296649
+Train error: 0.014000, Valid error: 0.063000, Test error: 0.079662
+---------- END ----------
+---------- 170 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.045550, Valid loss: 0.244314, Test loss: 0.305436
+Train error: 0.014000, Valid error: 0.062000, Test error: 0.079295
+---------- END ----------
+---------- 171 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.050370, Valid loss: 0.249010, Test loss: 0.298641
+Train error: 0.016000, Valid error: 0.064000, Test error: 0.078561
+---------- END ----------
+---------- 172 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.045628, Valid loss: 0.238112, Test loss: 0.293263
+Train error: 0.014000, Valid error: 0.064000, Test error: 0.078561
+---------- END ----------
+---------- 173 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.045117, Valid loss: 0.246566, Test loss: 0.300968
+Train error: 0.014000, Valid error: 0.062000, Test error: 0.078928
+---------- END ----------
+---------- 174 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.044997, Valid loss: 0.262577, Test loss: 0.306060
+Train error: 0.014000, Valid error: 0.063000, Test error: 0.078194
+---------- END ----------
+---------- 175 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.046103, Valid loss: 0.260376, Test loss: 0.302524
+Train error: 0.014000, Valid error: 0.069000, Test error: 0.077460
+---------- END ----------
+---------- 176 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.045600, Valid loss: 0.257832, Test loss: 0.292882
+Train error: 0.014000, Valid error: 0.067000, Test error: 0.075257
+---------- END ----------
+---------- 177 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.049844, Valid loss: 0.260805, Test loss: 0.309446
+Train error: 0.014000, Valid error: 0.068000, Test error: 0.080029
+---------- END ----------
+---------- 178 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.046414, Valid loss: 0.256786, Test loss: 0.314563
+Train error: 0.014000, Valid error: 0.070000, Test error: 0.076725
+---------- END ----------
+---------- 179 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.045552, Valid loss: 0.247892, Test loss: 0.306435
+Train error: 0.014000, Valid error: 0.063000, Test error: 0.075624
+---------- END ----------
+---------- 180 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.052191, Valid loss: 0.268546, Test loss: 0.335256
+Train error: 0.018000, Valid error: 0.069000, Test error: 0.081865
+---------- END ----------
+---------- 181 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.044834, Valid loss: 0.240494, Test loss: 0.293983
+Train error: 0.014000, Valid error: 0.066000, Test error: 0.077460
+---------- END ----------
+---------- 182 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.045735, Valid loss: 0.241237, Test loss: 0.307613
+Train error: 0.014000, Valid error: 0.065000, Test error: 0.078928
+---------- END ----------
+---------- 183 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.046568, Valid loss: 0.253476, Test loss: 0.323303
+Train error: 0.014000, Valid error: 0.069000, Test error: 0.078561
+---------- END ----------
+---------- 184 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.043371, Valid loss: 0.250133, Test loss: 0.323906
+Train error: 0.014000, Valid error: 0.066000, Test error: 0.077827
+---------- END ----------
+---------- 185 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.045484, Valid loss: 0.265222, Test loss: 0.318561
+Train error: 0.014000, Valid error: 0.060000, Test error: 0.078194
+---------- END ----------
+---------- 186 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.042340, Valid loss: 0.254227, Test loss: 0.305944
+Train error: 0.014000, Valid error: 0.067000, Test error: 0.078928
+---------- END ----------
+---------- 187 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.041864, Valid loss: 0.248041, Test loss: 0.307015
+Train error: 0.014000, Valid error: 0.060000, Test error: 0.075624
+---------- END ----------
+---------- 188 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.043488, Valid loss: 0.240724, Test loss: 0.294937
+Train error: 0.014000, Valid error: 0.063000, Test error: 0.075257
+---------- END ----------
+---------- 189 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.045788, Valid loss: 0.239512, Test loss: 0.298598
+Train error: 0.014000, Valid error: 0.064000, Test error: 0.076358
+---------- END ----------
+---------- 190 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.047478, Valid loss: 0.239152, Test loss: 0.297008
+Train error: 0.016000, Valid error: 0.064000, Test error: 0.079295
+---------- END ----------
+---------- 191 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.046775, Valid loss: 0.234666, Test loss: 0.282467
+Train error: 0.014000, Valid error: 0.065000, Test error: 0.075624
+---------- END ----------
+---------- 192 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.044461, Valid loss: 0.243865, Test loss: 0.295799
+Train error: 0.014000, Valid error: 0.067000, Test error: 0.075991
+---------- END ----------
+---------- 193 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.043006, Valid loss: 0.254962, Test loss: 0.303965
+Train error: 0.014000, Valid error: 0.069000, Test error: 0.075624
+---------- END ----------
+---------- 194 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.043976, Valid loss: 0.257422, Test loss: 0.301986
+Train error: 0.014000, Valid error: 0.070000, Test error: 0.077460
+---------- END ----------
+---------- 195 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.041212, Valid loss: 0.254366, Test loss: 0.301558
+Train error: 0.014000, Valid error: 0.066000, Test error: 0.075991
+---------- END ----------
+---------- 196 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.041794, Valid loss: 0.245702, Test loss: 0.293113
+Train error: 0.014000, Valid error: 0.064000, Test error: 0.073789
+---------- END ----------
+---------- 197 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.042154, Valid loss: 0.237525, Test loss: 0.288166
+Train error: 0.014000, Valid error: 0.064000, Test error: 0.076725
+---------- END ----------
+---------- 198 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.041626, Valid loss: 0.237336, Test loss: 0.294960
+Train error: 0.014000, Valid error: 0.067000, Test error: 0.076725
+---------- END ----------
+---------- 199 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.041883, Valid loss: 0.239414, Test loss: 0.295395
+Train error: 0.014000, Valid error: 0.063000, Test error: 0.077093
+---------- END ----------
+---------- 200 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.041899, Valid loss: 0.242145, Test loss: 0.296589
+Train error: 0.014000, Valid error: 0.068000, Test error: 0.075257
+---------- END ----------
+---------- 201 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.042710, Valid loss: 0.228390, Test loss: 0.289698
+Train error: 0.014000, Valid error: 0.061000, Test error: 0.075257
+---------- END ----------
+---------- 202 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.044430, Valid loss: 0.226981, Test loss: 0.284650
+Train error: 0.014000, Valid error: 0.062000, Test error: 0.075257
+---------- END ----------
+---------- 203 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.046008, Valid loss: 0.234029, Test loss: 0.281950
+Train error: 0.014000, Valid error: 0.066000, Test error: 0.077093
+---------- END ----------
+---------- 204 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.046312, Valid loss: 0.232397, Test loss: 0.282021
+Train error: 0.014000, Valid error: 0.059000, Test error: 0.077460
+---------- END ----------
+---------- 205 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.052415, Valid loss: 0.242636, Test loss: 0.286905
+Train error: 0.016000, Valid error: 0.069000, Test error: 0.074156
+---------- END ----------
+---------- 206 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.044525, Valid loss: 0.248381, Test loss: 0.290291
+Train error: 0.014000, Valid error: 0.073000, Test error: 0.073789
+---------- END ----------
+---------- 207 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.047535, Valid loss: 0.270212, Test loss: 0.319694
+Train error: 0.014000, Valid error: 0.070000, Test error: 0.080764
+---------- END ----------
+---------- 208 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.047212, Valid loss: 0.260470, Test loss: 0.289885
+Train error: 0.014000, Valid error: 0.069000, Test error: 0.075991
+---------- END ----------
+---------- 209 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.043716, Valid loss: 0.265153, Test loss: 0.287619
+Train error: 0.014000, Valid error: 0.066000, Test error: 0.076358
+---------- END ----------
+---------- 210 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.048113, Valid loss: 0.271690, Test loss: 0.310064
+Train error: 0.016000, Valid error: 0.072000, Test error: 0.077460
+---------- END ----------
+---------- 211 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.043864, Valid loss: 0.284516, Test loss: 0.311813
+Train error: 0.014000, Valid error: 0.073000, Test error: 0.077460
+---------- END ----------
+---------- 212 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.043108, Valid loss: 0.274046, Test loss: 0.305936
+Train error: 0.014000, Valid error: 0.071000, Test error: 0.077460
+---------- END ----------
+---------- 213 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.042039, Valid loss: 0.264620, Test loss: 0.300876
+Train error: 0.014000, Valid error: 0.067000, Test error: 0.077093
+---------- END ----------
+---------- 214 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.042005, Valid loss: 0.253514, Test loss: 0.303080
+Train error: 0.014000, Valid error: 0.066000, Test error: 0.077827
+---------- END ----------
+---------- 215 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.044002, Valid loss: 0.241447, Test loss: 0.313000
+Train error: 0.014000, Valid error: 0.067000, Test error: 0.077093
+---------- END ----------
+---------- 216 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.043871, Valid loss: 0.240252, Test loss: 0.309950
+Train error: 0.014000, Valid error: 0.065000, Test error: 0.077827
+---------- END ----------
+---------- 217 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.043802, Valid loss: 0.246927, Test loss: 0.315189
+Train error: 0.014000, Valid error: 0.067000, Test error: 0.075991
+---------- END ----------
+---------- 218 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.041258, Valid loss: 0.254272, Test loss: 0.309128
+Train error: 0.014000, Valid error: 0.062000, Test error: 0.075991
+---------- END ----------
+---------- 219 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.043174, Valid loss: 0.269605, Test loss: 0.310589
+Train error: 0.014000, Valid error: 0.067000, Test error: 0.077827
+---------- END ----------
+---------- 220 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.044492, Valid loss: 0.284252, Test loss: 0.312499
+Train error: 0.014000, Valid error: 0.069000, Test error: 0.078561
+---------- END ----------
+---------- 221 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.044164, Valid loss: 0.279169, Test loss: 0.304325
+Train error: 0.014000, Valid error: 0.073000, Test error: 0.077827
+---------- END ----------
+---------- 222 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.045493, Valid loss: 0.254701, Test loss: 0.304255
+Train error: 0.014000, Valid error: 0.067000, Test error: 0.075991
+---------- END ----------
+---------- 223 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.053879, Valid loss: 0.255313, Test loss: 0.309471
+Train error: 0.014000, Valid error: 0.071000, Test error: 0.076725
+---------- END ----------
+---------- 224 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.046506, Valid loss: 0.241387, Test loss: 0.299166
+Train error: 0.014000, Valid error: 0.068000, Test error: 0.074156
+---------- END ----------
+---------- 225 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.050541, Valid loss: 0.246815, Test loss: 0.297953
+Train error: 0.016000, Valid error: 0.066000, Test error: 0.075624
+---------- END ----------
+---------- 226 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.046792, Valid loss: 0.240307, Test loss: 0.292290
+Train error: 0.014000, Valid error: 0.067000, Test error: 0.075991
+---------- END ----------
+---------- 227 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.047263, Valid loss: 0.258280, Test loss: 0.303885
+Train error: 0.014000, Valid error: 0.063000, Test error: 0.077093
+---------- END ----------
+---------- 228 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.044118, Valid loss: 0.249513, Test loss: 0.289913
+Train error: 0.014000, Valid error: 0.070000, Test error: 0.071219
+---------- END ----------
+---------- 229 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.049140, Valid loss: 0.265030, Test loss: 0.306721
+Train error: 0.014000, Valid error: 0.072000, Test error: 0.076358
+---------- END ----------
+---------- 230 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.044902, Valid loss: 0.248343, Test loss: 0.300909
+Train error: 0.014000, Valid error: 0.063000, Test error: 0.074523
+---------- END ----------
+---------- 231 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.043038, Valid loss: 0.230687, Test loss: 0.294297
+Train error: 0.014000, Valid error: 0.064000, Test error: 0.075257
+---------- END ----------
+---------- 232 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.042232, Valid loss: 0.231061, Test loss: 0.288579
+Train error: 0.014000, Valid error: 0.060000, Test error: 0.074156
+---------- END ----------
+---------- 233 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.043505, Valid loss: 0.247116, Test loss: 0.286736
+Train error: 0.014000, Valid error: 0.071000, Test error: 0.073789
+---------- END ----------
+---------- 234 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.043609, Valid loss: 0.250596, Test loss: 0.286163
+Train error: 0.014000, Valid error: 0.069000, Test error: 0.074890
+---------- END ----------
+---------- 235 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.044657, Valid loss: 0.242812, Test loss: 0.289871
+Train error: 0.014000, Valid error: 0.068000, Test error: 0.075991
+---------- END ----------
+---------- 236 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.042319, Valid loss: 0.235505, Test loss: 0.293228
+Train error: 0.014000, Valid error: 0.067000, Test error: 0.076725
+---------- END ----------
+---------- 237 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.041538, Valid loss: 0.233606, Test loss: 0.290719
+Train error: 0.014000, Valid error: 0.067000, Test error: 0.076725
+---------- END ----------
+---------- 238 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.042241, Valid loss: 0.245883, Test loss: 0.296331
+Train error: 0.014000, Valid error: 0.071000, Test error: 0.075991
+---------- END ----------
+---------- 239 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.042205, Valid loss: 0.245270, Test loss: 0.300147
+Train error: 0.014000, Valid error: 0.066000, Test error: 0.074890
+---------- END ----------
+---------- 240 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.042315, Valid loss: 0.241796, Test loss: 0.299828
+Train error: 0.014000, Valid error: 0.064000, Test error: 0.074156
+---------- END ----------
+---------- 241 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.041248, Valid loss: 0.238853, Test loss: 0.305782
+Train error: 0.014000, Valid error: 0.060000, Test error: 0.075991
+---------- END ----------
+---------- 242 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.042464, Valid loss: 0.242341, Test loss: 0.314137
+Train error: 0.014000, Valid error: 0.065000, Test error: 0.075624
+---------- END ----------
+---------- 243 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.041421, Valid loss: 0.250201, Test loss: 0.314718
+Train error: 0.014000, Valid error: 0.063000, Test error: 0.075257
+---------- END ----------
+---------- 244 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.042061, Valid loss: 0.259762, Test loss: 0.314420
+Train error: 0.014000, Valid error: 0.067000, Test error: 0.074156
+---------- END ----------
+---------- 245 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.043201, Valid loss: 0.272167, Test loss: 0.313861
+Train error: 0.014000, Valid error: 0.066000, Test error: 0.074890
+---------- END ----------
+---------- 246 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.043168, Valid loss: 0.277483, Test loss: 0.313896
+Train error: 0.014000, Valid error: 0.071000, Test error: 0.074890
+---------- END ----------
+---------- 247 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.044802, Valid loss: 0.273782, Test loss: 0.311723
+Train error: 0.014000, Valid error: 0.066000, Test error: 0.075257
+---------- END ----------
+---------- 248 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.043823, Valid loss: 0.263775, Test loss: 0.301960
+Train error: 0.014000, Valid error: 0.067000, Test error: 0.074156
+---------- END ----------
+---------- 249 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.043604, Valid loss: 0.250920, Test loss: 0.293422
+Train error: 0.014000, Valid error: 0.060000, Test error: 0.073421
+---------- END ----------
+---------- 250 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.044703, Valid loss: 0.236948, Test loss: 0.296395
+Train error: 0.014000, Valid error: 0.060000, Test error: 0.076725
+---------- END ----------
+---------- 251 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.043933, Valid loss: 0.225725, Test loss: 0.292942
+Train error: 0.014000, Valid error: 0.060000, Test error: 0.075624
+---------- END ----------
+---------- 252 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.045558, Valid loss: 0.234658, Test loss: 0.305965
+Train error: 0.014000, Valid error: 0.062000, Test error: 0.074890
+---------- END ----------
+---------- 253 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.044144, Valid loss: 0.237578, Test loss: 0.297072
+Train error: 0.014000, Valid error: 0.067000, Test error: 0.076725
+---------- END ----------
+---------- 254 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.051921, Valid loss: 0.257146, Test loss: 0.306842
+Train error: 0.016000, Valid error: 0.065000, Test error: 0.076358
+---------- END ----------
+---------- 255 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.043593, Valid loss: 0.236309, Test loss: 0.293430
+Train error: 0.014000, Valid error: 0.062000, Test error: 0.074156
+---------- END ----------
+---------- 256 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.043542, Valid loss: 0.248294, Test loss: 0.293529
+Train error: 0.014000, Valid error: 0.063000, Test error: 0.075624
+---------- END ----------
+---------- 257 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.043681, Valid loss: 0.258210, Test loss: 0.294468
+Train error: 0.014000, Valid error: 0.066000, Test error: 0.077827
+---------- END ----------
+---------- 258 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.047041, Valid loss: 0.266826, Test loss: 0.294847
+Train error: 0.014000, Valid error: 0.066000, Test error: 0.074890
+---------- END ----------
+---------- 259 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.046524, Valid loss: 0.271796, Test loss: 0.304475
+Train error: 0.014000, Valid error: 0.070000, Test error: 0.076725
+---------- END ----------
+---------- 260 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.046178, Valid loss: 0.262667, Test loss: 0.293122
+Train error: 0.014000, Valid error: 0.070000, Test error: 0.074890
+---------- END ----------
+---------- 261 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.048192, Valid loss: 0.254922, Test loss: 0.292240
+Train error: 0.016000, Valid error: 0.074000, Test error: 0.073789
+---------- END ----------
+---------- 262 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.053351, Valid loss: 0.261249, Test loss: 0.303654
+Train error: 0.016000, Valid error: 0.071000, Test error: 0.075991
+---------- END ----------
+---------- 263 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.048966, Valid loss: 0.236411, Test loss: 0.293720
+Train error: 0.016000, Valid error: 0.061000, Test error: 0.077093
+---------- END ----------
+---------- 264 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.045543, Valid loss: 0.231725, Test loss: 0.300765
+Train error: 0.014000, Valid error: 0.066000, Test error: 0.077093
+---------- END ----------
+---------- 265 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.042293, Valid loss: 0.250323, Test loss: 0.306254
+Train error: 0.014000, Valid error: 0.071000, Test error: 0.074156
+---------- END ----------
+---------- 266 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.044957, Valid loss: 0.246809, Test loss: 0.301311
+Train error: 0.014000, Valid error: 0.071000, Test error: 0.074523
+---------- END ----------
+---------- 267 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.047254, Valid loss: 0.234848, Test loss: 0.296363
+Train error: 0.014000, Valid error: 0.064000, Test error: 0.076358
+---------- END ----------
+---------- 268 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.047453, Valid loss: 0.250936, Test loss: 0.310712
+Train error: 0.016000, Valid error: 0.069000, Test error: 0.077093
+---------- END ----------
+---------- 269 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.048373, Valid loss: 0.250850, Test loss: 0.309272
+Train error: 0.014000, Valid error: 0.070000, Test error: 0.080029
+---------- END ----------
+---------- 270 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.041821, Valid loss: 0.241402, Test loss: 0.300774
+Train error: 0.014000, Valid error: 0.065000, Test error: 0.075257
+---------- END ----------
+---------- 271 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.044745, Valid loss: 0.248487, Test loss: 0.307895
+Train error: 0.014000, Valid error: 0.070000, Test error: 0.074523
+---------- END ----------
+---------- 272 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.041457, Valid loss: 0.250077, Test loss: 0.311423
+Train error: 0.014000, Valid error: 0.062000, Test error: 0.074523
+---------- END ----------
+---------- 273 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.043489, Valid loss: 0.243893, Test loss: 0.298209
+Train error: 0.014000, Valid error: 0.062000, Test error: 0.076358
+---------- END ----------
+---------- 274 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.042036, Valid loss: 0.250255, Test loss: 0.313586
+Train error: 0.014000, Valid error: 0.064000, Test error: 0.073421
+---------- END ----------
+---------- 275 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.045845, Valid loss: 0.268720, Test loss: 0.313518
+Train error: 0.014000, Valid error: 0.066000, Test error: 0.077460
+---------- END ----------
+---------- 276 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.042782, Valid loss: 0.257771, Test loss: 0.310737
+Train error: 0.014000, Valid error: 0.065000, Test error: 0.075624
+---------- END ----------
+---------- 277 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.042323, Valid loss: 0.243263, Test loss: 0.306048
+Train error: 0.014000, Valid error: 0.063000, Test error: 0.073789
+---------- END ----------
+---------- 278 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.040623, Valid loss: 0.233792, Test loss: 0.299212
+Train error: 0.014000, Valid error: 0.062000, Test error: 0.071586
+---------- END ----------
+---------- 279 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.043365, Valid loss: 0.248864, Test loss: 0.308293
+Train error: 0.014000, Valid error: 0.067000, Test error: 0.076358
+---------- END ----------
+---------- 280 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.042045, Valid loss: 0.246329, Test loss: 0.291531
+Train error: 0.014000, Valid error: 0.066000, Test error: 0.072687
+---------- END ----------
+---------- 281 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.041468, Valid loss: 0.254636, Test loss: 0.294399
+Train error: 0.014000, Valid error: 0.071000, Test error: 0.073789
+---------- END ----------
+---------- 282 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.042082, Valid loss: 0.257068, Test loss: 0.302588
+Train error: 0.014000, Valid error: 0.069000, Test error: 0.073421
+---------- END ----------
+---------- 283 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.040732, Valid loss: 0.244600, Test loss: 0.296229
+Train error: 0.014000, Valid error: 0.067000, Test error: 0.075991
+---------- END ----------
+---------- 284 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.041437, Valid loss: 0.255542, Test loss: 0.299591
+Train error: 0.014000, Valid error: 0.065000, Test error: 0.074523
+---------- END ----------
+---------- 285 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.041332, Valid loss: 0.258033, Test loss: 0.301490
+Train error: 0.014000, Valid error: 0.065000, Test error: 0.073789
+---------- END ----------
+---------- 286 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.041936, Valid loss: 0.256027, Test loss: 0.303074
+Train error: 0.014000, Valid error: 0.065000, Test error: 0.075257
+---------- END ----------
+---------- 287 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.042626, Valid loss: 0.252627, Test loss: 0.292078
+Train error: 0.014000, Valid error: 0.065000, Test error: 0.076725
+---------- END ----------
+---------- 288 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.041587, Valid loss: 0.262605, Test loss: 0.301536
+Train error: 0.014000, Valid error: 0.071000, Test error: 0.076358
+---------- END ----------
+---------- 289 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.042170, Valid loss: 0.270528, Test loss: 0.301572
+Train error: 0.014000, Valid error: 0.069000, Test error: 0.073421
+---------- END ----------
+---------- 290 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.041174, Valid loss: 0.257150, Test loss: 0.293898
+Train error: 0.014000, Valid error: 0.064000, Test error: 0.074156
+---------- END ----------
+---------- 291 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.042412, Valid loss: 0.258790, Test loss: 0.296449
+Train error: 0.014000, Valid error: 0.068000, Test error: 0.075257
+---------- END ----------
+---------- 292 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.042270, Valid loss: 0.262991, Test loss: 0.307093
+Train error: 0.014000, Valid error: 0.067000, Test error: 0.076725
+---------- END ----------
+---------- 293 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.043549, Valid loss: 0.259488, Test loss: 0.311431
+Train error: 0.014000, Valid error: 0.069000, Test error: 0.076725
+---------- END ----------
+---------- 294 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.044955, Valid loss: 0.262191, Test loss: 0.309568
+Train error: 0.014000, Valid error: 0.068000, Test error: 0.077093
+---------- END ----------
+---------- 295 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.043459, Valid loss: 0.251345, Test loss: 0.297091
+Train error: 0.014000, Valid error: 0.066000, Test error: 0.075991
+---------- END ----------
+---------- 296 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.043563, Valid loss: 0.252688, Test loss: 0.296748
+Train error: 0.014000, Valid error: 0.069000, Test error: 0.074156
+---------- END ----------
+---------- 297 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.043062, Valid loss: 0.256066, Test loss: 0.301795
+Train error: 0.014000, Valid error: 0.064000, Test error: 0.077093
+---------- END ----------
+---------- 298 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.042985, Valid loss: 0.252948, Test loss: 0.297027
+Train error: 0.014000, Valid error: 0.069000, Test error: 0.074523
+---------- END ----------
+---------- 299 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.042827, Valid loss: 0.254149, Test loss: 0.301408
+Train error: 0.014000, Valid error: 0.066000, Test error: 0.075257
+---------- END ----------
+---------- 300 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.043545, Valid loss: 0.244937, Test loss: 0.297495
+Train error: 0.014000, Valid error: 0.061000, Test error: 0.073421
+---------- END ----------
+---------- 301 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.042369, Valid loss: 0.245021, Test loss: 0.287596
+Train error: 0.014000, Valid error: 0.063000, Test error: 0.072687
+---------- END ----------
+---------- 302 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.043323, Valid loss: 0.254358, Test loss: 0.298512
+Train error: 0.014000, Valid error: 0.066000, Test error: 0.076358
+---------- END ----------
+---------- 303 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.046561, Valid loss: 0.258887, Test loss: 0.304468
+Train error: 0.014000, Valid error: 0.065000, Test error: 0.077460
+---------- END ----------
+---------- 304 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.045041, Valid loss: 0.259875, Test loss: 0.311790
+Train error: 0.014000, Valid error: 0.063000, Test error: 0.078561
+---------- END ----------
+---------- 305 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.046920, Valid loss: 0.239773, Test loss: 0.301119
+Train error: 0.014000, Valid error: 0.065000, Test error: 0.075624
+---------- END ----------
+---------- 306 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.041622, Valid loss: 0.246695, Test loss: 0.293081
+Train error: 0.014000, Valid error: 0.065000, Test error: 0.072687
+---------- END ----------
+---------- 307 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.041927, Valid loss: 0.258531, Test loss: 0.295221
+Train error: 0.014000, Valid error: 0.068000, Test error: 0.075624
+---------- END ----------
+---------- 308 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.043012, Valid loss: 0.276831, Test loss: 0.296342
+Train error: 0.014000, Valid error: 0.069000, Test error: 0.073789
+---------- END ----------
+---------- 309 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.044220, Valid loss: 0.288190, Test loss: 0.303318
+Train error: 0.014000, Valid error: 0.071000, Test error: 0.075257
+---------- END ----------
+---------- 310 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.042704, Valid loss: 0.272944, Test loss: 0.293306
+Train error: 0.014000, Valid error: 0.067000, Test error: 0.073789
+---------- END ----------
+---------- 311 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.042374, Valid loss: 0.255034, Test loss: 0.292599
+Train error: 0.014000, Valid error: 0.063000, Test error: 0.075624
+---------- END ----------
+---------- 312 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.044484, Valid loss: 0.238773, Test loss: 0.297825
+Train error: 0.014000, Valid error: 0.062000, Test error: 0.076725
+---------- END ----------
+---------- 313 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.041601, Valid loss: 0.236866, Test loss: 0.289010
+Train error: 0.014000, Valid error: 0.062000, Test error: 0.074156
+---------- END ----------
+---------- 314 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.042313, Valid loss: 0.235778, Test loss: 0.290474
+Train error: 0.014000, Valid error: 0.067000, Test error: 0.073421
+---------- END ----------
+---------- 315 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.041378, Valid loss: 0.241683, Test loss: 0.295557
+Train error: 0.014000, Valid error: 0.064000, Test error: 0.073789
+---------- END ----------
+---------- 316 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.041625, Valid loss: 0.252755, Test loss: 0.295695
+Train error: 0.014000, Valid error: 0.065000, Test error: 0.076358
+---------- END ----------
+---------- 317 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.042929, Valid loss: 0.244888, Test loss: 0.290920
+Train error: 0.014000, Valid error: 0.062000, Test error: 0.075991
+---------- END ----------
+---------- 318 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.043359, Valid loss: 0.257326, Test loss: 0.290930
+Train error: 0.014000, Valid error: 0.065000, Test error: 0.074156
+---------- END ----------
+---------- 319 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.042026, Valid loss: 0.261420, Test loss: 0.292917
+Train error: 0.014000, Valid error: 0.064000, Test error: 0.075991
+---------- END ----------
+---------- 320 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.041701, Valid loss: 0.258330, Test loss: 0.288487
+Train error: 0.014000, Valid error: 0.063000, Test error: 0.074523
+---------- END ----------
+---------- 321 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.041507, Valid loss: 0.247382, Test loss: 0.284953
+Train error: 0.014000, Valid error: 0.060000, Test error: 0.075257
+---------- END ----------
+---------- 322 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.042891, Valid loss: 0.247086, Test loss: 0.290134
+Train error: 0.014000, Valid error: 0.058000, Test error: 0.074523
+---------- END ----------
+---------- 323 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.044595, Valid loss: 0.244710, Test loss: 0.296653
+Train error: 0.014000, Valid error: 0.062000, Test error: 0.075991
+---------- END ----------
+---------- 324 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.045357, Valid loss: 0.237418, Test loss: 0.299584
+Train error: 0.014000, Valid error: 0.061000, Test error: 0.075991
+---------- END ----------
+---------- 325 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.042879, Valid loss: 0.233229, Test loss: 0.291491
+Train error: 0.014000, Valid error: 0.062000, Test error: 0.073789
+---------- END ----------
+---------- 326 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.043735, Valid loss: 0.234011, Test loss: 0.286544
+Train error: 0.014000, Valid error: 0.066000, Test error: 0.072320
+---------- END ----------
+---------- 327 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.043960, Valid loss: 0.246511, Test loss: 0.289830
+Train error: 0.014000, Valid error: 0.063000, Test error: 0.076725
+---------- END ----------
+---------- 328 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.049668, Valid loss: 0.265641, Test loss: 0.296240
+Train error: 0.014000, Valid error: 0.071000, Test error: 0.078561
+---------- END ----------
+---------- 329 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.047061, Valid loss: 0.255673, Test loss: 0.291827
+Train error: 0.014000, Valid error: 0.066000, Test error: 0.076358
+---------- END ----------
+---------- 330 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.043953, Valid loss: 0.241386, Test loss: 0.284763
+Train error: 0.014000, Valid error: 0.063000, Test error: 0.074156
+---------- END ----------
+---------- 331 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.046630, Valid loss: 0.264889, Test loss: 0.295849
+Train error: 0.014000, Valid error: 0.066000, Test error: 0.075624
+---------- END ----------
+---------- 332 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.047926, Valid loss: 0.274215, Test loss: 0.299853
+Train error: 0.014000, Valid error: 0.068000, Test error: 0.077460
+---------- END ----------
+---------- 333 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.044277, Valid loss: 0.261208, Test loss: 0.287679
+Train error: 0.014000, Valid error: 0.068000, Test error: 0.074523
+---------- END ----------
+---------- 334 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.051710, Valid loss: 0.252571, Test loss: 0.291292
+Train error: 0.016000, Valid error: 0.063000, Test error: 0.076725
+---------- END ----------
+---------- 335 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.043886, Valid loss: 0.256640, Test loss: 0.289364
+Train error: 0.014000, Valid error: 0.063000, Test error: 0.074156
+---------- END ----------
+---------- 336 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.042996, Valid loss: 0.247813, Test loss: 0.290067
+Train error: 0.014000, Valid error: 0.064000, Test error: 0.074890
+---------- END ----------
+---------- 337 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.041447, Valid loss: 0.260568, Test loss: 0.297631
+Train error: 0.014000, Valid error: 0.066000, Test error: 0.077460
+---------- END ----------
+---------- 338 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.043817, Valid loss: 0.260439, Test loss: 0.298551
+Train error: 0.014000, Valid error: 0.068000, Test error: 0.078194
+---------- END ----------
+---------- 339 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.043991, Valid loss: 0.262831, Test loss: 0.298123
+Train error: 0.014000, Valid error: 0.069000, Test error: 0.076358
+---------- END ----------
+---------- 340 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.041839, Valid loss: 0.250280, Test loss: 0.294169
+Train error: 0.014000, Valid error: 0.065000, Test error: 0.073789
+---------- END ----------
+---------- 341 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.042399, Valid loss: 0.240017, Test loss: 0.287052
+Train error: 0.014000, Valid error: 0.062000, Test error: 0.074523
+---------- END ----------
+---------- 342 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.042180, Valid loss: 0.234858, Test loss: 0.285670
+Train error: 0.014000, Valid error: 0.064000, Test error: 0.073421
+---------- END ----------
+---------- 343 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.040209, Valid loss: 0.237662, Test loss: 0.284591
+Train error: 0.012000, Valid error: 0.062000, Test error: 0.074890
+---------- END ----------
+---------- 344 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.040828, Valid loss: 0.242750, Test loss: 0.293486
+Train error: 0.012000, Valid error: 0.059000, Test error: 0.075257
+---------- END ----------
+---------- 345 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.039045, Valid loss: 0.252431, Test loss: 0.290499
+Train error: 0.012000, Valid error: 0.061000, Test error: 0.073421
+---------- END ----------
+---------- 346 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.040283, Valid loss: 0.261247, Test loss: 0.293025
+Train error: 0.012000, Valid error: 0.062000, Test error: 0.073789
+---------- END ----------
+---------- 347 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.040273, Valid loss: 0.263842, Test loss: 0.294006
+Train error: 0.012000, Valid error: 0.063000, Test error: 0.074156
+---------- END ----------
+---------- 348 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.039478, Valid loss: 0.260913, Test loss: 0.299571
+Train error: 0.012000, Valid error: 0.066000, Test error: 0.074156
+---------- END ----------
+---------- 349 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.042799, Valid loss: 0.246595, Test loss: 0.292934
+Train error: 0.014000, Valid error: 0.063000, Test error: 0.072320
+---------- END ----------
+---------- 350 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.045520, Valid loss: 0.245794, Test loss: 0.292440
+Train error: 0.014000, Valid error: 0.064000, Test error: 0.072687
+---------- END ----------
+---------- 351 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.043183, Valid loss: 0.248000, Test loss: 0.293586
+Train error: 0.014000, Valid error: 0.065000, Test error: 0.074523
+---------- END ----------
+---------- 352 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.047275, Valid loss: 0.255434, Test loss: 0.294721
+Train error: 0.014000, Valid error: 0.069000, Test error: 0.073054
+---------- END ----------
+---------- 353 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.047464, Valid loss: 0.257889, Test loss: 0.297709
+Train error: 0.014000, Valid error: 0.066000, Test error: 0.075257
+---------- END ----------
+---------- 354 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.047607, Valid loss: 0.258084, Test loss: 0.301377
+Train error: 0.016000, Valid error: 0.070000, Test error: 0.076725
+---------- END ----------
+---------- 355 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.048174, Valid loss: 0.274081, Test loss: 0.308398
+Train error: 0.014000, Valid error: 0.075000, Test error: 0.078561
+---------- END ----------
+---------- 356 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.040030, Valid loss: 0.254261, Test loss: 0.296328
+Train error: 0.012000, Valid error: 0.069000, Test error: 0.077460
+---------- END ----------
+---------- 357 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.043517, Valid loss: 0.262083, Test loss: 0.302957
+Train error: 0.012000, Valid error: 0.069000, Test error: 0.077827
+---------- END ----------
+---------- 358 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.038266, Valid loss: 0.253047, Test loss: 0.297329
+Train error: 0.012000, Valid error: 0.061000, Test error: 0.075991
+---------- END ----------
+---------- 359 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.038234, Valid loss: 0.242502, Test loss: 0.289925
+Train error: 0.012000, Valid error: 0.060000, Test error: 0.073421
+---------- END ----------
+---------- 360 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.040123, Valid loss: 0.234326, Test loss: 0.287300
+Train error: 0.012000, Valid error: 0.059000, Test error: 0.072687
+---------- END ----------
+---------- 361 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.040416, Valid loss: 0.256121, Test loss: 0.299130
+Train error: 0.012000, Valid error: 0.063000, Test error: 0.076358
+---------- END ----------
+---------- 362 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.039719, Valid loss: 0.257731, Test loss: 0.297674
+Train error: 0.012000, Valid error: 0.062000, Test error: 0.075624
+---------- END ----------
+---------- 363 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.042430, Valid loss: 0.260954, Test loss: 0.303179
+Train error: 0.012000, Valid error: 0.062000, Test error: 0.076725
+---------- END ----------
+---------- 364 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.038833, Valid loss: 0.255668, Test loss: 0.294638
+Train error: 0.012000, Valid error: 0.065000, Test error: 0.074156
+---------- END ----------
+---------- 365 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.038827, Valid loss: 0.252154, Test loss: 0.297870
+Train error: 0.012000, Valid error: 0.067000, Test error: 0.077460
+---------- END ----------
+---------- 366 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.040292, Valid loss: 0.239490, Test loss: 0.293682
+Train error: 0.012000, Valid error: 0.064000, Test error: 0.077827
+---------- END ----------
+---------- 367 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.038365, Valid loss: 0.253961, Test loss: 0.293326
+Train error: 0.012000, Valid error: 0.066000, Test error: 0.074890
+---------- END ----------
+---------- 368 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.040161, Valid loss: 0.247569, Test loss: 0.302236
+Train error: 0.012000, Valid error: 0.064000, Test error: 0.075991
+---------- END ----------
+---------- 369 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.038111, Valid loss: 0.243768, Test loss: 0.302376
+Train error: 0.012000, Valid error: 0.061000, Test error: 0.076725
+---------- END ----------
+---------- 370 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.037413, Valid loss: 0.236123, Test loss: 0.291415
+Train error: 0.012000, Valid error: 0.063000, Test error: 0.074523
+---------- END ----------
+---------- 371 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.039057, Valid loss: 0.237201, Test loss: 0.297670
+Train error: 0.012000, Valid error: 0.067000, Test error: 0.075257
+---------- END ----------
+---------- 372 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.039026, Valid loss: 0.237509, Test loss: 0.306258
+Train error: 0.012000, Valid error: 0.062000, Test error: 0.075624
+---------- END ----------
+---------- 373 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.041709, Valid loss: 0.241421, Test loss: 0.305909
+Train error: 0.012000, Valid error: 0.066000, Test error: 0.075991
+---------- END ----------
+---------- 374 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.039366, Valid loss: 0.250786, Test loss: 0.303880
+Train error: 0.012000, Valid error: 0.066000, Test error: 0.076725
+---------- END ----------
+---------- 375 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.038335, Valid loss: 0.254461, Test loss: 0.304929
+Train error: 0.012000, Valid error: 0.063000, Test error: 0.075991
+---------- END ----------
+---------- 376 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.038091, Valid loss: 0.270923, Test loss: 0.302378
+Train error: 0.012000, Valid error: 0.069000, Test error: 0.074890
+---------- END ----------
+---------- 377 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.038075, Valid loss: 0.277665, Test loss: 0.300127
+Train error: 0.012000, Valid error: 0.071000, Test error: 0.072687
+---------- END ----------
+---------- 378 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.038256, Valid loss: 0.259252, Test loss: 0.294683
+Train error: 0.012000, Valid error: 0.063000, Test error: 0.075991
+---------- END ----------
+---------- 379 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.036970, Valid loss: 0.248222, Test loss: 0.298868
+Train error: 0.012000, Valid error: 0.059000, Test error: 0.074523
+---------- END ----------
+---------- 380 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.038549, Valid loss: 0.241155, Test loss: 0.299427
+Train error: 0.012000, Valid error: 0.063000, Test error: 0.075991
+---------- END ----------
+---------- 381 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.036113, Valid loss: 0.247936, Test loss: 0.293346
+Train error: 0.012000, Valid error: 0.061000, Test error: 0.075624
+---------- END ----------
+---------- 382 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.036166, Valid loss: 0.251795, Test loss: 0.295075
+Train error: 0.012000, Valid error: 0.064000, Test error: 0.075624
+---------- END ----------
+---------- 383 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.036921, Valid loss: 0.250481, Test loss: 0.296528
+Train error: 0.012000, Valid error: 0.062000, Test error: 0.074890
+---------- END ----------
+---------- 384 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.036417, Valid loss: 0.244555, Test loss: 0.293223
+Train error: 0.012000, Valid error: 0.064000, Test error: 0.075624
+---------- END ----------
+---------- 385 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.036659, Valid loss: 0.241337, Test loss: 0.294580
+Train error: 0.012000, Valid error: 0.062000, Test error: 0.076358
+---------- END ----------
+---------- 386 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.037412, Valid loss: 0.239054, Test loss: 0.289579
+Train error: 0.012000, Valid error: 0.061000, Test error: 0.075624
+---------- END ----------
+---------- 387 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.037313, Valid loss: 0.235076, Test loss: 0.291103
+Train error: 0.012000, Valid error: 0.062000, Test error: 0.074523
+---------- END ----------
+---------- 388 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.036873, Valid loss: 0.244074, Test loss: 0.289590
+Train error: 0.012000, Valid error: 0.064000, Test error: 0.076358
+---------- END ----------
+---------- 389 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.036574, Valid loss: 0.248129, Test loss: 0.287410
+Train error: 0.012000, Valid error: 0.063000, Test error: 0.074523
+---------- END ----------
+---------- 390 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.036939, Valid loss: 0.247246, Test loss: 0.284986
+Train error: 0.012000, Valid error: 0.063000, Test error: 0.075257
+---------- END ----------
+---------- 391 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.037013, Valid loss: 0.251868, Test loss: 0.287916
+Train error: 0.012000, Valid error: 0.065000, Test error: 0.077093
+---------- END ----------
+---------- 392 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.037160, Valid loss: 0.248200, Test loss: 0.293475
+Train error: 0.012000, Valid error: 0.063000, Test error: 0.075624
+---------- END ----------
+---------- 393 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.038139, Valid loss: 0.241028, Test loss: 0.289967
+Train error: 0.012000, Valid error: 0.060000, Test error: 0.075257
+---------- END ----------
+---------- 394 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.039499, Valid loss: 0.244547, Test loss: 0.293325
+Train error: 0.012000, Valid error: 0.062000, Test error: 0.075991
+---------- END ----------
+---------- 395 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.038825, Valid loss: 0.250479, Test loss: 0.296133
+Train error: 0.012000, Valid error: 0.064000, Test error: 0.074890
+---------- END ----------
+---------- 396 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.038396, Valid loss: 0.246110, Test loss: 0.292838
+Train error: 0.012000, Valid error: 0.062000, Test error: 0.074156
+---------- END ----------
+---------- 397 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.037902, Valid loss: 0.247449, Test loss: 0.294683
+Train error: 0.012000, Valid error: 0.062000, Test error: 0.075991
+---------- END ----------
+---------- 398 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.037845, Valid loss: 0.247487, Test loss: 0.291250
+Train error: 0.012000, Valid error: 0.066000, Test error: 0.076358
+---------- END ----------
+---------- 399 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.038892, Valid loss: 0.253421, Test loss: 0.293783
+Train error: 0.012000, Valid error: 0.069000, Test error: 0.078561
+---------- END ----------
+---------- 400 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.041757, Valid loss: 0.264579, Test loss: 0.303811
+Train error: 0.012000, Valid error: 0.070000, Test error: 0.078561
+---------- END ----------
+---------- 401 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.042474, Valid loss: 0.265345, Test loss: 0.305158
+Train error: 0.012000, Valid error: 0.067000, Test error: 0.080764
+---------- END ----------
+---------- 402 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.044399, Valid loss: 0.259737, Test loss: 0.302982
+Train error: 0.012000, Valid error: 0.067000, Test error: 0.081865
+---------- END ----------
+---------- 403 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.042811, Valid loss: 0.253847, Test loss: 0.299388
+Train error: 0.012000, Valid error: 0.065000, Test error: 0.079295
+---------- END ----------
+---------- 404 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.039189, Valid loss: 0.245302, Test loss: 0.292014
+Train error: 0.012000, Valid error: 0.065000, Test error: 0.074890
+---------- END ----------
+---------- 405 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.046381, Valid loss: 0.257145, Test loss: 0.296666
+Train error: 0.014000, Valid error: 0.064000, Test error: 0.075257
+---------- END ----------
+---------- 406 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.045086, Valid loss: 0.260921, Test loss: 0.295087
+Train error: 0.012000, Valid error: 0.068000, Test error: 0.077827
+---------- END ----------
+---------- 407 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.038966, Valid loss: 0.261121, Test loss: 0.288567
+Train error: 0.012000, Valid error: 0.069000, Test error: 0.078561
+---------- END ----------
+---------- 408 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.037206, Valid loss: 0.253739, Test loss: 0.284279
+Train error: 0.012000, Valid error: 0.063000, Test error: 0.073421
+---------- END ----------
+---------- 409 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.037711, Valid loss: 0.239431, Test loss: 0.287925
+Train error: 0.012000, Valid error: 0.067000, Test error: 0.074890
+---------- END ----------
+---------- 410 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.036802, Valid loss: 0.239291, Test loss: 0.286093
+Train error: 0.012000, Valid error: 0.065000, Test error: 0.074890
+---------- END ----------
+---------- 411 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.038760, Valid loss: 0.247259, Test loss: 0.292583
+Train error: 0.012000, Valid error: 0.065000, Test error: 0.074890
+---------- END ----------
+---------- 412 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.035489, Valid loss: 0.240142, Test loss: 0.284134
+Train error: 0.012000, Valid error: 0.063000, Test error: 0.074523
+---------- END ----------
+---------- 413 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.036128, Valid loss: 0.240103, Test loss: 0.285859
+Train error: 0.012000, Valid error: 0.066000, Test error: 0.078194
+---------- END ----------
+---------- 414 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.038929, Valid loss: 0.245266, Test loss: 0.290747
+Train error: 0.012000, Valid error: 0.062000, Test error: 0.078194
+---------- END ----------
+---------- 415 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.038771, Valid loss: 0.241475, Test loss: 0.290067
+Train error: 0.012000, Valid error: 0.060000, Test error: 0.075991
+---------- END ----------
+---------- 416 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.037800, Valid loss: 0.252971, Test loss: 0.289493
+Train error: 0.012000, Valid error: 0.063000, Test error: 0.074890
+---------- END ----------
+---------- 417 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.037778, Valid loss: 0.257872, Test loss: 0.296168
+Train error: 0.012000, Valid error: 0.063000, Test error: 0.075624
+---------- END ----------
+---------- 418 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.039074, Valid loss: 0.260270, Test loss: 0.291055
+Train error: 0.012000, Valid error: 0.066000, Test error: 0.075624
+---------- END ----------
+---------- 419 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.040328, Valid loss: 0.253197, Test loss: 0.286520
+Train error: 0.012000, Valid error: 0.068000, Test error: 0.074890
+---------- END ----------
+---------- 420 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.039154, Valid loss: 0.251172, Test loss: 0.289825
+Train error: 0.012000, Valid error: 0.067000, Test error: 0.077093
+---------- END ----------
+---------- 421 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.039732, Valid loss: 0.242387, Test loss: 0.294735
+Train error: 0.012000, Valid error: 0.064000, Test error: 0.075991
+---------- END ----------
+---------- 422 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.039482, Valid loss: 0.238413, Test loss: 0.290575
+Train error: 0.012000, Valid error: 0.063000, Test error: 0.073054
+---------- END ----------
+---------- 423 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.040238, Valid loss: 0.248452, Test loss: 0.287697
+Train error: 0.012000, Valid error: 0.062000, Test error: 0.074523
+---------- END ----------
+---------- 424 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.041988, Valid loss: 0.246999, Test loss: 0.295991
+Train error: 0.012000, Valid error: 0.065000, Test error: 0.074156
+---------- END ----------
+---------- 425 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.040482, Valid loss: 0.255443, Test loss: 0.306241
+Train error: 0.012000, Valid error: 0.068000, Test error: 0.076358
+---------- END ----------
+---------- 426 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.040591, Valid loss: 0.257747, Test loss: 0.301088
+Train error: 0.012000, Valid error: 0.068000, Test error: 0.075257
+---------- END ----------
+---------- 427 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.039512, Valid loss: 0.251726, Test loss: 0.301028
+Train error: 0.010000, Valid error: 0.065000, Test error: 0.077093
+---------- END ----------
+---------- 428 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.035079, Valid loss: 0.247576, Test loss: 0.290674
+Train error: 0.010000, Valid error: 0.062000, Test error: 0.077827
+---------- END ----------
+---------- 429 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.035808, Valid loss: 0.240002, Test loss: 0.293475
+Train error: 0.010000, Valid error: 0.063000, Test error: 0.080396
+---------- END ----------
+---------- 430 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.035099, Valid loss: 0.245522, Test loss: 0.301045
+Train error: 0.010000, Valid error: 0.062000, Test error: 0.079295
+---------- END ----------
+---------- 431 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.033607, Valid loss: 0.254806, Test loss: 0.299993
+Train error: 0.010000, Valid error: 0.066000, Test error: 0.078928
+---------- END ----------
+---------- 432 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.033287, Valid loss: 0.253790, Test loss: 0.287827
+Train error: 0.010000, Valid error: 0.062000, Test error: 0.074890
+---------- END ----------
+---------- 433 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.034516, Valid loss: 0.255406, Test loss: 0.292215
+Train error: 0.010000, Valid error: 0.059000, Test error: 0.074890
+---------- END ----------
+---------- 434 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.037434, Valid loss: 0.254769, Test loss: 0.296172
+Train error: 0.010000, Valid error: 0.068000, Test error: 0.075624
+---------- END ----------
+---------- 435 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.033037, Valid loss: 0.246591, Test loss: 0.288191
+Train error: 0.010000, Valid error: 0.063000, Test error: 0.075624
+---------- END ----------
+---------- 436 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.034944, Valid loss: 0.241184, Test loss: 0.295076
+Train error: 0.010000, Valid error: 0.062000, Test error: 0.074523
+---------- END ----------
+---------- 437 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.035930, Valid loss: 0.249372, Test loss: 0.295237
+Train error: 0.010000, Valid error: 0.069000, Test error: 0.075257
+---------- END ----------
+---------- 438 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.039646, Valid loss: 0.259833, Test loss: 0.299123
+Train error: 0.012000, Valid error: 0.069000, Test error: 0.078194
+---------- END ----------
+---------- 439 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.037540, Valid loss: 0.249889, Test loss: 0.305390
+Train error: 0.010000, Valid error: 0.070000, Test error: 0.074890
+---------- END ----------
+---------- 440 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.035842, Valid loss: 0.236256, Test loss: 0.296692
+Train error: 0.010000, Valid error: 0.071000, Test error: 0.075624
+---------- END ----------
+---------- 441 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.035758, Valid loss: 0.247794, Test loss: 0.300292
+Train error: 0.010000, Valid error: 0.070000, Test error: 0.076725
+---------- END ----------
+---------- 442 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.038912, Valid loss: 0.244625, Test loss: 0.308234
+Train error: 0.010000, Valid error: 0.066000, Test error: 0.078561
+---------- END ----------
+---------- 443 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.034583, Valid loss: 0.243317, Test loss: 0.300597
+Train error: 0.010000, Valid error: 0.065000, Test error: 0.075624
+---------- END ----------
+---------- 444 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.034449, Valid loss: 0.239384, Test loss: 0.290315
+Train error: 0.010000, Valid error: 0.071000, Test error: 0.077093
+---------- END ----------
+---------- 445 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.032590, Valid loss: 0.240152, Test loss: 0.286984
+Train error: 0.010000, Valid error: 0.059000, Test error: 0.073789
+---------- END ----------
+---------- 446 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.033481, Valid loss: 0.252377, Test loss: 0.292517
+Train error: 0.010000, Valid error: 0.068000, Test error: 0.076358
+---------- END ----------
+---------- 447 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.034684, Valid loss: 0.262232, Test loss: 0.295158
+Train error: 0.010000, Valid error: 0.066000, Test error: 0.076358
+---------- END ----------
+---------- 448 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.033474, Valid loss: 0.256859, Test loss: 0.295116
+Train error: 0.010000, Valid error: 0.065000, Test error: 0.075991
+---------- END ----------
+---------- 449 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.033631, Valid loss: 0.254064, Test loss: 0.295962
+Train error: 0.010000, Valid error: 0.066000, Test error: 0.077093
+---------- END ----------
+---------- 450 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.032341, Valid loss: 0.243454, Test loss: 0.294912
+Train error: 0.010000, Valid error: 0.063000, Test error: 0.075991
+---------- END ----------
+---------- 451 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.032600, Valid loss: 0.234454, Test loss: 0.290310
+Train error: 0.010000, Valid error: 0.063000, Test error: 0.076725
+---------- END ----------
+---------- 452 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.033021, Valid loss: 0.236358, Test loss: 0.285646
+Train error: 0.010000, Valid error: 0.063000, Test error: 0.075624
+---------- END ----------
+---------- 453 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.035503, Valid loss: 0.244264, Test loss: 0.288998
+Train error: 0.012000, Valid error: 0.068000, Test error: 0.075991
+---------- END ----------
+---------- 454 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.034628, Valid loss: 0.254189, Test loss: 0.294200
+Train error: 0.010000, Valid error: 0.065000, Test error: 0.077460
+---------- END ----------
+---------- 455 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.033902, Valid loss: 0.259075, Test loss: 0.292055
+Train error: 0.010000, Valid error: 0.070000, Test error: 0.077093
+---------- END ----------
+---------- 456 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.032620, Valid loss: 0.254414, Test loss: 0.291789
+Train error: 0.010000, Valid error: 0.066000, Test error: 0.076358
+---------- END ----------
+---------- 457 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.033473, Valid loss: 0.244634, Test loss: 0.294253
+Train error: 0.010000, Valid error: 0.064000, Test error: 0.075624
+---------- END ----------
+---------- 458 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.034051, Valid loss: 0.244694, Test loss: 0.295227
+Train error: 0.010000, Valid error: 0.067000, Test error: 0.075624
+---------- END ----------
+---------- 459 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.033670, Valid loss: 0.243570, Test loss: 0.291062
+Train error: 0.010000, Valid error: 0.063000, Test error: 0.077827
+---------- END ----------
+---------- 460 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.033467, Valid loss: 0.244181, Test loss: 0.290178
+Train error: 0.010000, Valid error: 0.065000, Test error: 0.075257
+---------- END ----------
+---------- 461 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.032727, Valid loss: 0.242457, Test loss: 0.288319
+Train error: 0.010000, Valid error: 0.066000, Test error: 0.075991
+---------- END ----------
+---------- 462 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.032338, Valid loss: 0.237482, Test loss: 0.287046
+Train error: 0.010000, Valid error: 0.062000, Test error: 0.078561
+---------- END ----------
+---------- 463 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.032680, Valid loss: 0.240543, Test loss: 0.284998
+Train error: 0.010000, Valid error: 0.064000, Test error: 0.075624
+---------- END ----------
+---------- 464 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.034126, Valid loss: 0.240169, Test loss: 0.284239
+Train error: 0.010000, Valid error: 0.063000, Test error: 0.075257
+---------- END ----------
+---------- 465 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.033888, Valid loss: 0.243679, Test loss: 0.283671
+Train error: 0.010000, Valid error: 0.065000, Test error: 0.073421
+---------- END ----------
+---------- 466 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.032937, Valid loss: 0.242659, Test loss: 0.285609
+Train error: 0.010000, Valid error: 0.064000, Test error: 0.076358
+---------- END ----------
+---------- 467 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.032733, Valid loss: 0.238394, Test loss: 0.286846
+Train error: 0.010000, Valid error: 0.066000, Test error: 0.074890
+---------- END ----------
+---------- 468 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.033826, Valid loss: 0.236095, Test loss: 0.284277
+Train error: 0.010000, Valid error: 0.061000, Test error: 0.075624
+---------- END ----------
+---------- 469 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.034283, Valid loss: 0.242849, Test loss: 0.287811
+Train error: 0.010000, Valid error: 0.062000, Test error: 0.076725
+---------- END ----------
+---------- 470 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.034281, Valid loss: 0.249788, Test loss: 0.291103
+Train error: 0.010000, Valid error: 0.063000, Test error: 0.076725
+---------- END ----------
+---------- 471 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.033360, Valid loss: 0.255242, Test loss: 0.292583
+Train error: 0.010000, Valid error: 0.066000, Test error: 0.076358
+---------- END ----------
+---------- 472 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.035034, Valid loss: 0.261684, Test loss: 0.296199
+Train error: 0.010000, Valid error: 0.065000, Test error: 0.077460
+---------- END ----------
+---------- 473 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.033831, Valid loss: 0.256541, Test loss: 0.299981
+Train error: 0.010000, Valid error: 0.066000, Test error: 0.078194
+---------- END ----------
+---------- 474 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.035005, Valid loss: 0.256672, Test loss: 0.295842
+Train error: 0.010000, Valid error: 0.065000, Test error: 0.079295
+---------- END ----------
+---------- 475 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.034331, Valid loss: 0.245579, Test loss: 0.293371
+Train error: 0.010000, Valid error: 0.062000, Test error: 0.077460
+---------- END ----------
+---------- 476 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.034142, Valid loss: 0.243544, Test loss: 0.295479
+Train error: 0.010000, Valid error: 0.062000, Test error: 0.073421
+---------- END ----------
+---------- 477 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.034889, Valid loss: 0.245654, Test loss: 0.304012
+Train error: 0.010000, Valid error: 0.062000, Test error: 0.076358
+---------- END ----------
+---------- 478 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.035342, Valid loss: 0.250632, Test loss: 0.307417
+Train error: 0.010000, Valid error: 0.066000, Test error: 0.076358
+---------- END ----------
+---------- 479 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.035105, Valid loss: 0.248528, Test loss: 0.301601
+Train error: 0.010000, Valid error: 0.067000, Test error: 0.075257
+---------- END ----------
+---------- 480 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.035092, Valid loss: 0.248905, Test loss: 0.294012
+Train error: 0.010000, Valid error: 0.068000, Test error: 0.076358
+---------- END ----------
+---------- 481 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.034173, Valid loss: 0.245703, Test loss: 0.289488
+Train error: 0.010000, Valid error: 0.067000, Test error: 0.076358
+---------- END ----------
+---------- 482 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.033467, Valid loss: 0.257184, Test loss: 0.292746
+Train error: 0.010000, Valid error: 0.067000, Test error: 0.076725
+---------- END ----------
+---------- 483 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.035647, Valid loss: 0.254363, Test loss: 0.294053
+Train error: 0.010000, Valid error: 0.064000, Test error: 0.075991
+---------- END ----------
+---------- 484 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.037181, Valid loss: 0.260400, Test loss: 0.299861
+Train error: 0.010000, Valid error: 0.068000, Test error: 0.076358
+---------- END ----------
+---------- 485 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.036875, Valid loss: 0.265292, Test loss: 0.307117
+Train error: 0.010000, Valid error: 0.069000, Test error: 0.075991
+---------- END ----------
+---------- 486 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.036400, Valid loss: 0.267890, Test loss: 0.306991
+Train error: 0.010000, Valid error: 0.067000, Test error: 0.077827
+---------- END ----------
+---------- 487 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.033988, Valid loss: 0.257574, Test loss: 0.306835
+Train error: 0.010000, Valid error: 0.068000, Test error: 0.077093
+---------- END ----------
+---------- 488 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.039492, Valid loss: 0.252171, Test loss: 0.308015
+Train error: 0.010000, Valid error: 0.073000, Test error: 0.075624
+---------- END ----------
+---------- 489 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.036096, Valid loss: 0.246598, Test loss: 0.295982
+Train error: 0.010000, Valid error: 0.067000, Test error: 0.076358
+---------- END ----------
+---------- 490 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.037017, Valid loss: 0.252244, Test loss: 0.300473
+Train error: 0.010000, Valid error: 0.062000, Test error: 0.073421
+---------- END ----------
+---------- 491 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.037084, Valid loss: 0.278962, Test loss: 0.309075
+Train error: 0.010000, Valid error: 0.065000, Test error: 0.077460
+---------- END ----------
+---------- 492 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.037002, Valid loss: 0.280949, Test loss: 0.306780
+Train error: 0.010000, Valid error: 0.070000, Test error: 0.076358
+---------- END ----------
+---------- 493 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.035753, Valid loss: 0.282752, Test loss: 0.304502
+Train error: 0.010000, Valid error: 0.071000, Test error: 0.075991
+---------- END ----------
+---------- 494 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.034563, Valid loss: 0.287950, Test loss: 0.312346
+Train error: 0.010000, Valid error: 0.071000, Test error: 0.074890
+---------- END ----------
+---------- 495 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.033274, Valid loss: 0.260271, Test loss: 0.295921
+Train error: 0.010000, Valid error: 0.066000, Test error: 0.075257
+---------- END ----------
+---------- 496 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.031814, Valid loss: 0.251560, Test loss: 0.286806
+Train error: 0.010000, Valid error: 0.061000, Test error: 0.074890
+---------- END ----------
+---------- 497 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.033217, Valid loss: 0.254310, Test loss: 0.285472
+Train error: 0.010000, Valid error: 0.065000, Test error: 0.076358
+---------- END ----------
+---------- 498 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.034224, Valid loss: 0.257258, Test loss: 0.292190
+Train error: 0.010000, Valid error: 0.064000, Test error: 0.077460
+---------- END ----------
+---------- 499 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.033153, Valid loss: 0.257510, Test loss: 0.288462
+Train error: 0.010000, Valid error: 0.065000, Test error: 0.076725
+---------- END ----------
+---------- 500 EPOCH(S) FINISHED AT H = 500.000000 - Results ----------
+Train loss: 0.031839, Valid loss: 0.260059, Test loss: 0.285397
+Train error: 0.010000, Valid error: 0.062000, Test error: 0.074523
+---------- END ----------

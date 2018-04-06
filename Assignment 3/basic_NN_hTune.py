@@ -97,12 +97,12 @@ plt.grid(True)
 
 
 # File setup
-f = open("H_100_stats.txt", "w+")
+# f = open("H_100_stats.txt", "w+")
 # f = open("H_500_stats.txt", "w+")
-# f = open("H_1000_stats.txt", "w+")
+f = open("H_1000_stats.txt", "w+")
 
 # Train
-units = 100
+units = 1000 
 X, Y, ce_loss, total_loss, error, train = buildGraph(units)
 sess = tf.Session()
 sess.run(tf.global_variables_initializer())
@@ -144,9 +144,9 @@ print("Results - final valid loss: {}, final valid error: {}".format(valid_loss[
 plt.plot(x_axis, valid_loss, '-', str(units) + ' hidden units' )
 
 plt.legend(loc="best")
-fig_valid_loss.savefig("H_100_tune.png")
+# fig_valid_loss.savefig("H_100_tune.png")
 # fig_valid_loss.savefig("H_500_tune.png")
-# fig_valid_loss.savefig("H_1000_tune.png")
+fig_valid_loss.savefig("H_1000_tune.png")
 plt.show()
 
 fig_error = plt.figure(2)
@@ -160,9 +160,9 @@ plt.plot(x_axis, valid_err, '-', label=('Validation'))
 plt.plot(x_axis, test_err, '-', label=('Test'))
 
 plt.legend(loc="best")
-fig_error.savefig("H_100_error.png")
+# fig_error.savefig("H_100_error.png")
 # fig_error.savefig("H_500_error.png")
-# fig_error.savefig("H_1000_error.png")
+fig_error.savefig("H_1000_error.png")
 plt.show()
 
 fig_loss = plt.figure(3)
@@ -176,51 +176,51 @@ plt.plot(x_axis, valid_loss, '-', label=('Validation'))
 plt.plot(x_axis, test_loss, '-', label=('Test'))
 
 plt.legend(loc="best")
-fig_loss.savefig("H_100_loss.png")
+# fig_loss.savefig("H_100_loss.png")
 # fig_loss.savefig("H_500_loss.png")
-# fig_loss.savefig("H_1000_loss.png")
+fig_loss.savefig("H_1000_loss.png")
 plt.show()
 
 # np.save("H_100_valid", valid_loss)
 # np.save("H_500_valid", valid_loss)
-# np.save("H_1000_valid", valid_loss)
+np.save("H_1000_valid", valid_loss)
 
 # np.save("H_100_test_err", test_err)
 # np.save("H_500_test_err", test_err)
-# np.save("H_1000_test_err", test_err)
+np.save("H_1000_test_err", test_err)
 
-# H_100_valid = np.load("H_100_valid.npy")
-# H_500_valid = np.load("H_100_valid.npy")
-# H_1000_valid = np.load("H_100_valid.npy")
+H_100_valid = np.load("H_100_valid.npy")
+H_500_valid = np.load("H_500_valid.npy")
+H_1000_valid = np.load("H_1010101010101010101000_valid.npy")
 
-# H_100_test_err = np.load("H_100_test_err.npy")
-# H_500_test_err = np.load("H_500_test_err.npy")
-# H_1000_test_err = np.load("H_1000_test_err.npy")
+H_100_test_err = np.load("H_100_test_err.npy")
+H_500_test_err = np.load("H_500_test_err.npy")
+H_1000_test_err = np.load("H_1000_test_err.npy")
 
-# fig_valid_loss_cmp = plt.figure()
-# plt.title = 'Validation Loss vs. Epoch'
-# plt.ylabel('Cross Entropy Loss')
-# plt.xlabel('Epoch')
-# plt.grid(True)
+fig_loss_cmp = plt.figure()
+plt.title = 'Validation Loss vs. Epoch'
+plt.ylabel('Cross Entropy Loss')
+plt.xlabel('Epoch')
+plt.grid(True)
 
-# plt.plot(x_axis, H_100_valid, '-', label=('100 Hidden Units'))
-# plt.plot(x_axis, H_500_valid, '-', label=('500 Hidden Units'))
-# plt.plot(x_axis, H_1000_valid, '-', label=('1000 Hidden Units'))
+plt.plot(x_axis, H_100_valid, '-', label=('100 Hidden Units'))
+plt.plot(x_axis, H_500_valid, '-', label=('500 Hidden Units'))
+plt.plot(x_axis, H_1000_valid, '-', label=('1000 Hidden Units'))
 
-# plt.legend(loc="best")
-# fig_loss.savefig("H_valid_loss_cmp.png")
-# plt.show()
+plt.legend(loc="best")
+fig_loss_cmp.savefig("H_valid_loss_cmp.png")
+plt.show()
 
-# fig_test_err_cmp = plt.figure()
-# plt.title = 'Test Error vs. Epoch'
-# plt.ylabel('Classification Error')
-# plt.xlabel('Epoch')
-# plt.grid(True)
+fig_err_cmp = plt.figure()
+plt.title = 'Test Error vs. Epoch'
+plt.ylabel('Classification Error')
+plt.xlabel('Epoch')
+plt.grid(True)
 
-# plt.plot(x_axis, H_100_test_err, '-', label=('100 Hidden Units'))
-# plt.plot(x_axis, H_500_test_err, '-', label=('500 Hidden Units'))
-# plt.plot(x_axis, H_1000_test_err, '-', label=('1000 Hidden Units'))
+plt.plot(x_axis, H_100_test_err, '-', label=('100 Hidden Units'))
+plt.plot(x_axis, H_500_test_err, '-', label=('500 Hidden Units'))
+plt.plot(x_axis, H_1000_test_err, '-', label=('1000 Hidden Units'))
 
-# plt.legend(loc="best")
-# fig_loss.savefig("H_valid_loss_cmp.png")
-# plt.show()
+plt.legend(loc="best")
+fig_err_cmp.savefig("H_test_err_cmp.png")
+plt.show()
